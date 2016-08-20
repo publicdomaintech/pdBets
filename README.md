@@ -1,2 +1,2 @@
 # pdBets
-Public Domain Betting Software
+Public Domain Betting Software.
