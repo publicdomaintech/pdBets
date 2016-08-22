@@ -30,11 +30,11 @@ namespace PdBets
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-			System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Input");
-			System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("BetSelection");
-			System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("MoneyManagement");
-			System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Display");
-			System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Output");
+			System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Input");
+			System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("BetSelection");
+			System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("MoneyManagement");
+			System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Display");
+			System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Output");
 			this.mainStatusStrip = new System.Windows.Forms.StatusStrip();
 			this.mainToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
 			this.mainMenuStrip = new System.Windows.Forms.MenuStrip();
@@ -156,7 +156,6 @@ namespace PdBets
 			this.configCreateNewPackButton = new System.Windows.Forms.Button();
 			this.configModulesTreeView = new System.Windows.Forms.TreeView();
 			this.configPrevButton = new System.Windows.Forms.Button();
-			this.configLaunchButton = new System.Windows.Forms.Button();
 			this.configModulesLabel = new System.Windows.Forms.Label();
 			this.configSettingsLabel = new System.Windows.Forms.Label();
 			this.configPropertyGrid = new System.Windows.Forms.PropertyGrid();
@@ -165,6 +164,7 @@ namespace PdBets
 			this.listBox2 = new System.Windows.Forms.ListBox();
 			this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
 			this.button4 = new System.Windows.Forms.Button();
+			this.configLaunchButton = new System.Windows.Forms.Button();
 			this.mainStatusStrip.SuspendLayout();
 			this.mainMenuStrip.SuspendLayout();
 			this.mainToolStrip.SuspendLayout();
@@ -454,7 +454,7 @@ namespace PdBets
 			// 
 			this.aboutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("aboutToolStripMenuItem.Image")));
 			this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-			this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.aboutToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
 			this.aboutToolStripMenuItem.Text = "&About...";
 			this.aboutToolStripMenuItem.Click += new System.EventHandler(this.OnAboutToolStripMenuItemClick);
 			// 
@@ -605,12 +605,12 @@ namespace PdBets
 			// 
 			this.packsLoadButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.packsLoadButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.packsLoadButton.Image = ((System.Drawing.Image)(resources.GetObject("packsLoadButton.Image")));
 			this.packsLoadButton.Location = new System.Drawing.Point(3, 3);
 			this.packsLoadButton.Name = "packsLoadButton";
 			this.packsTableLayoutPanel.SetRowSpan(this.packsLoadButton, 2);
 			this.packsLoadButton.Size = new System.Drawing.Size(34, 202);
 			this.packsLoadButton.TabIndex = 0;
-			this.packsLoadButton.Text = "^";
 			this.packsLoadButton.UseVisualStyleBackColor = true;
 			this.packsLoadButton.Click += new System.EventHandler(this.OnPacksLoadButtonClick);
 			// 
@@ -618,12 +618,12 @@ namespace PdBets
 			// 
 			this.packsNextButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.packsNextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.packsNextButton.Image = ((System.Drawing.Image)(resources.GetObject("packsNextButton.Image")));
 			this.packsNextButton.Location = new System.Drawing.Point(469, 3);
 			this.packsNextButton.Name = "packsNextButton";
 			this.packsTableLayoutPanel.SetRowSpan(this.packsNextButton, 2);
 			this.packsNextButton.Size = new System.Drawing.Size(34, 202);
 			this.packsNextButton.TabIndex = 1;
-			this.packsNextButton.Text = ">";
 			this.packsNextButton.UseVisualStyleBackColor = true;
 			this.packsNextButton.Click += new System.EventHandler(this.OnFocusedTabPageNextButtonClick);
 			// 
@@ -704,12 +704,12 @@ namespace PdBets
 			// 
 			this.inputPrevButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.inputPrevButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.inputPrevButton.Image = ((System.Drawing.Image)(resources.GetObject("inputPrevButton.Image")));
 			this.inputPrevButton.Location = new System.Drawing.Point(3, 3);
 			this.inputPrevButton.Name = "inputPrevButton";
 			this.tableLayoutPanel1.SetRowSpan(this.inputPrevButton, 2);
 			this.inputPrevButton.Size = new System.Drawing.Size(34, 202);
 			this.inputPrevButton.TabIndex = 0;
-			this.inputPrevButton.Text = "<";
 			this.inputPrevButton.UseVisualStyleBackColor = true;
 			this.inputPrevButton.Click += new System.EventHandler(this.OnFocusedTabPagePrevButtonClick);
 			// 
@@ -717,12 +717,12 @@ namespace PdBets
 			// 
 			this.inputNextButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.inputNextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.inputNextButton.Image = ((System.Drawing.Image)(resources.GetObject("inputNextButton.Image")));
 			this.inputNextButton.Location = new System.Drawing.Point(469, 3);
 			this.inputNextButton.Name = "inputNextButton";
 			this.tableLayoutPanel1.SetRowSpan(this.inputNextButton, 2);
 			this.inputNextButton.Size = new System.Drawing.Size(34, 202);
 			this.inputNextButton.TabIndex = 1;
-			this.inputNextButton.Text = ">";
 			this.inputNextButton.UseVisualStyleBackColor = true;
 			this.inputNextButton.Click += new System.EventHandler(this.OnFocusedTabPageNextButtonClick);
 			// 
@@ -808,12 +808,12 @@ namespace PdBets
 			// 
 			this.inputUpButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.inputUpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+			this.inputUpButton.Image = ((System.Drawing.Image)(resources.GetObject("inputUpButton.Image")));
 			this.inputUpButton.Location = new System.Drawing.Point(1, 1);
 			this.inputUpButton.Margin = new System.Windows.Forms.Padding(1);
 			this.inputUpButton.Name = "inputUpButton";
 			this.inputUpButton.Size = new System.Drawing.Size(69, 23);
 			this.inputUpButton.TabIndex = 0;
-			this.inputUpButton.Text = "Up";
 			this.inputUpButton.UseVisualStyleBackColor = true;
 			this.inputUpButton.Click += new System.EventHandler(this.OnLoadedUpButtonClick);
 			// 
@@ -821,12 +821,12 @@ namespace PdBets
 			// 
 			this.inputDownButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.inputDownButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+			this.inputDownButton.Image = ((System.Drawing.Image)(resources.GetObject("inputDownButton.Image")));
 			this.inputDownButton.Location = new System.Drawing.Point(72, 1);
 			this.inputDownButton.Margin = new System.Windows.Forms.Padding(1);
 			this.inputDownButton.Name = "inputDownButton";
 			this.inputDownButton.Size = new System.Drawing.Size(69, 23);
 			this.inputDownButton.TabIndex = 1;
-			this.inputDownButton.Text = "Down";
 			this.inputDownButton.UseVisualStyleBackColor = true;
 			this.inputDownButton.Click += new System.EventHandler(this.OnLoadedDownButtonClick);
 			// 
@@ -834,12 +834,12 @@ namespace PdBets
 			// 
 			this.inputDeleteButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.inputDeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+			this.inputDeleteButton.Image = ((System.Drawing.Image)(resources.GetObject("inputDeleteButton.Image")));
 			this.inputDeleteButton.Location = new System.Drawing.Point(143, 1);
 			this.inputDeleteButton.Margin = new System.Windows.Forms.Padding(1);
 			this.inputDeleteButton.Name = "inputDeleteButton";
 			this.inputDeleteButton.Size = new System.Drawing.Size(69, 23);
 			this.inputDeleteButton.TabIndex = 2;
-			this.inputDeleteButton.Text = "Del";
 			this.inputDeleteButton.UseVisualStyleBackColor = true;
 			this.inputDeleteButton.Click += new System.EventHandler(this.OnLoadedDeleteButtonClick);
 			// 
@@ -879,12 +879,12 @@ namespace PdBets
 			// 
 			this.betSelectionPrevButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.betSelectionPrevButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.betSelectionPrevButton.Image = ((System.Drawing.Image)(resources.GetObject("betSelectionPrevButton.Image")));
 			this.betSelectionPrevButton.Location = new System.Drawing.Point(3, 3);
 			this.betSelectionPrevButton.Name = "betSelectionPrevButton";
 			this.tableLayoutPanel5.SetRowSpan(this.betSelectionPrevButton, 2);
 			this.betSelectionPrevButton.Size = new System.Drawing.Size(34, 202);
 			this.betSelectionPrevButton.TabIndex = 0;
-			this.betSelectionPrevButton.Text = "<";
 			this.betSelectionPrevButton.UseVisualStyleBackColor = true;
 			this.betSelectionPrevButton.Click += new System.EventHandler(this.OnFocusedTabPagePrevButtonClick);
 			// 
@@ -892,12 +892,12 @@ namespace PdBets
 			// 
 			this.betSelectionNextButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.betSelectionNextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.betSelectionNextButton.Image = ((System.Drawing.Image)(resources.GetObject("betSelectionNextButton.Image")));
 			this.betSelectionNextButton.Location = new System.Drawing.Point(469, 3);
 			this.betSelectionNextButton.Name = "betSelectionNextButton";
 			this.tableLayoutPanel5.SetRowSpan(this.betSelectionNextButton, 2);
 			this.betSelectionNextButton.Size = new System.Drawing.Size(34, 202);
 			this.betSelectionNextButton.TabIndex = 1;
-			this.betSelectionNextButton.Text = ">";
 			this.betSelectionNextButton.UseVisualStyleBackColor = true;
 			this.betSelectionNextButton.Click += new System.EventHandler(this.OnFocusedTabPageNextButtonClick);
 			// 
@@ -983,12 +983,12 @@ namespace PdBets
 			// 
 			this.betSelectionUpButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.betSelectionUpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+			this.betSelectionUpButton.Image = ((System.Drawing.Image)(resources.GetObject("betSelectionUpButton.Image")));
 			this.betSelectionUpButton.Location = new System.Drawing.Point(1, 1);
 			this.betSelectionUpButton.Margin = new System.Windows.Forms.Padding(1);
 			this.betSelectionUpButton.Name = "betSelectionUpButton";
 			this.betSelectionUpButton.Size = new System.Drawing.Size(69, 23);
 			this.betSelectionUpButton.TabIndex = 0;
-			this.betSelectionUpButton.Text = "Up";
 			this.betSelectionUpButton.UseVisualStyleBackColor = true;
 			this.betSelectionUpButton.Click += new System.EventHandler(this.OnLoadedUpButtonClick);
 			// 
@@ -996,12 +996,12 @@ namespace PdBets
 			// 
 			this.betSelectionDownButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.betSelectionDownButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+			this.betSelectionDownButton.Image = ((System.Drawing.Image)(resources.GetObject("betSelectionDownButton.Image")));
 			this.betSelectionDownButton.Location = new System.Drawing.Point(72, 1);
 			this.betSelectionDownButton.Margin = new System.Windows.Forms.Padding(1);
 			this.betSelectionDownButton.Name = "betSelectionDownButton";
 			this.betSelectionDownButton.Size = new System.Drawing.Size(69, 23);
 			this.betSelectionDownButton.TabIndex = 1;
-			this.betSelectionDownButton.Text = "Down";
 			this.betSelectionDownButton.UseVisualStyleBackColor = true;
 			this.betSelectionDownButton.Click += new System.EventHandler(this.OnLoadedDownButtonClick);
 			// 
@@ -1009,12 +1009,12 @@ namespace PdBets
 			// 
 			this.betSelectionDeleteButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.betSelectionDeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+			this.betSelectionDeleteButton.Image = ((System.Drawing.Image)(resources.GetObject("betSelectionDeleteButton.Image")));
 			this.betSelectionDeleteButton.Location = new System.Drawing.Point(143, 1);
 			this.betSelectionDeleteButton.Margin = new System.Windows.Forms.Padding(1);
 			this.betSelectionDeleteButton.Name = "betSelectionDeleteButton";
 			this.betSelectionDeleteButton.Size = new System.Drawing.Size(69, 23);
 			this.betSelectionDeleteButton.TabIndex = 2;
-			this.betSelectionDeleteButton.Text = "Del";
 			this.betSelectionDeleteButton.UseVisualStyleBackColor = true;
 			this.betSelectionDeleteButton.Click += new System.EventHandler(this.OnLoadedDeleteButtonClick);
 			// 
@@ -1054,12 +1054,12 @@ namespace PdBets
 			// 
 			this.moneyManagementPrevButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.moneyManagementPrevButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.moneyManagementPrevButton.Image = ((System.Drawing.Image)(resources.GetObject("moneyManagementPrevButton.Image")));
 			this.moneyManagementPrevButton.Location = new System.Drawing.Point(3, 3);
 			this.moneyManagementPrevButton.Name = "moneyManagementPrevButton";
 			this.tableLayoutPanel9.SetRowSpan(this.moneyManagementPrevButton, 2);
 			this.moneyManagementPrevButton.Size = new System.Drawing.Size(34, 202);
 			this.moneyManagementPrevButton.TabIndex = 0;
-			this.moneyManagementPrevButton.Text = "<";
 			this.moneyManagementPrevButton.UseVisualStyleBackColor = true;
 			this.moneyManagementPrevButton.Click += new System.EventHandler(this.OnFocusedTabPagePrevButtonClick);
 			// 
@@ -1067,12 +1067,12 @@ namespace PdBets
 			// 
 			this.moneyManagementNextButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.moneyManagementNextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.moneyManagementNextButton.Image = ((System.Drawing.Image)(resources.GetObject("moneyManagementNextButton.Image")));
 			this.moneyManagementNextButton.Location = new System.Drawing.Point(469, 3);
 			this.moneyManagementNextButton.Name = "moneyManagementNextButton";
 			this.tableLayoutPanel9.SetRowSpan(this.moneyManagementNextButton, 2);
 			this.moneyManagementNextButton.Size = new System.Drawing.Size(34, 202);
 			this.moneyManagementNextButton.TabIndex = 1;
-			this.moneyManagementNextButton.Text = ">";
 			this.moneyManagementNextButton.UseVisualStyleBackColor = true;
 			this.moneyManagementNextButton.Click += new System.EventHandler(this.OnFocusedTabPageNextButtonClick);
 			// 
@@ -1158,12 +1158,12 @@ namespace PdBets
 			// 
 			this.moneyManagementUpButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.moneyManagementUpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+			this.moneyManagementUpButton.Image = ((System.Drawing.Image)(resources.GetObject("moneyManagementUpButton.Image")));
 			this.moneyManagementUpButton.Location = new System.Drawing.Point(1, 1);
 			this.moneyManagementUpButton.Margin = new System.Windows.Forms.Padding(1);
 			this.moneyManagementUpButton.Name = "moneyManagementUpButton";
 			this.moneyManagementUpButton.Size = new System.Drawing.Size(69, 23);
 			this.moneyManagementUpButton.TabIndex = 0;
-			this.moneyManagementUpButton.Text = "Up";
 			this.moneyManagementUpButton.UseVisualStyleBackColor = true;
 			this.moneyManagementUpButton.Click += new System.EventHandler(this.OnLoadedUpButtonClick);
 			// 
@@ -1171,12 +1171,12 @@ namespace PdBets
 			// 
 			this.moneyManagementDownButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.moneyManagementDownButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+			this.moneyManagementDownButton.Image = ((System.Drawing.Image)(resources.GetObject("moneyManagementDownButton.Image")));
 			this.moneyManagementDownButton.Location = new System.Drawing.Point(72, 1);
 			this.moneyManagementDownButton.Margin = new System.Windows.Forms.Padding(1);
 			this.moneyManagementDownButton.Name = "moneyManagementDownButton";
 			this.moneyManagementDownButton.Size = new System.Drawing.Size(69, 23);
 			this.moneyManagementDownButton.TabIndex = 1;
-			this.moneyManagementDownButton.Text = "Down";
 			this.moneyManagementDownButton.UseVisualStyleBackColor = true;
 			this.moneyManagementDownButton.Click += new System.EventHandler(this.OnLoadedDownButtonClick);
 			// 
@@ -1184,12 +1184,12 @@ namespace PdBets
 			// 
 			this.moneyManagementDeleteButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.moneyManagementDeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+			this.moneyManagementDeleteButton.Image = ((System.Drawing.Image)(resources.GetObject("moneyManagementDeleteButton.Image")));
 			this.moneyManagementDeleteButton.Location = new System.Drawing.Point(143, 1);
 			this.moneyManagementDeleteButton.Margin = new System.Windows.Forms.Padding(1);
 			this.moneyManagementDeleteButton.Name = "moneyManagementDeleteButton";
 			this.moneyManagementDeleteButton.Size = new System.Drawing.Size(69, 23);
 			this.moneyManagementDeleteButton.TabIndex = 2;
-			this.moneyManagementDeleteButton.Text = "Del";
 			this.moneyManagementDeleteButton.UseVisualStyleBackColor = true;
 			this.moneyManagementDeleteButton.Click += new System.EventHandler(this.OnLoadedDeleteButtonClick);
 			// 
@@ -1229,12 +1229,12 @@ namespace PdBets
 			// 
 			this.displayPrevButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.displayPrevButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.displayPrevButton.Image = ((System.Drawing.Image)(resources.GetObject("displayPrevButton.Image")));
 			this.displayPrevButton.Location = new System.Drawing.Point(3, 3);
 			this.displayPrevButton.Name = "displayPrevButton";
 			this.tableLayoutPanel12.SetRowSpan(this.displayPrevButton, 2);
 			this.displayPrevButton.Size = new System.Drawing.Size(34, 202);
 			this.displayPrevButton.TabIndex = 0;
-			this.displayPrevButton.Text = "<";
 			this.displayPrevButton.UseVisualStyleBackColor = true;
 			this.displayPrevButton.Click += new System.EventHandler(this.OnFocusedTabPagePrevButtonClick);
 			// 
@@ -1242,12 +1242,12 @@ namespace PdBets
 			// 
 			this.displayNextButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.displayNextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.displayNextButton.Image = ((System.Drawing.Image)(resources.GetObject("displayNextButton.Image")));
 			this.displayNextButton.Location = new System.Drawing.Point(469, 3);
 			this.displayNextButton.Name = "displayNextButton";
 			this.tableLayoutPanel12.SetRowSpan(this.displayNextButton, 2);
 			this.displayNextButton.Size = new System.Drawing.Size(34, 202);
 			this.displayNextButton.TabIndex = 1;
-			this.displayNextButton.Text = ">";
 			this.displayNextButton.UseVisualStyleBackColor = true;
 			this.displayNextButton.Click += new System.EventHandler(this.OnFocusedTabPageNextButtonClick);
 			// 
@@ -1333,12 +1333,12 @@ namespace PdBets
 			// 
 			this.displayUpButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.displayUpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+			this.displayUpButton.Image = ((System.Drawing.Image)(resources.GetObject("displayUpButton.Image")));
 			this.displayUpButton.Location = new System.Drawing.Point(1, 1);
 			this.displayUpButton.Margin = new System.Windows.Forms.Padding(1);
 			this.displayUpButton.Name = "displayUpButton";
 			this.displayUpButton.Size = new System.Drawing.Size(69, 23);
 			this.displayUpButton.TabIndex = 0;
-			this.displayUpButton.Text = "Up";
 			this.displayUpButton.UseVisualStyleBackColor = true;
 			this.displayUpButton.Click += new System.EventHandler(this.OnLoadedUpButtonClick);
 			// 
@@ -1346,12 +1346,12 @@ namespace PdBets
 			// 
 			this.displayDownButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.displayDownButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+			this.displayDownButton.Image = ((System.Drawing.Image)(resources.GetObject("displayDownButton.Image")));
 			this.displayDownButton.Location = new System.Drawing.Point(72, 1);
 			this.displayDownButton.Margin = new System.Windows.Forms.Padding(1);
 			this.displayDownButton.Name = "displayDownButton";
 			this.displayDownButton.Size = new System.Drawing.Size(69, 23);
 			this.displayDownButton.TabIndex = 1;
-			this.displayDownButton.Text = "Down";
 			this.displayDownButton.UseVisualStyleBackColor = true;
 			this.displayDownButton.Click += new System.EventHandler(this.OnLoadedDownButtonClick);
 			// 
@@ -1359,12 +1359,12 @@ namespace PdBets
 			// 
 			this.displayDeleteButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.displayDeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+			this.displayDeleteButton.Image = ((System.Drawing.Image)(resources.GetObject("displayDeleteButton.Image")));
 			this.displayDeleteButton.Location = new System.Drawing.Point(143, 1);
 			this.displayDeleteButton.Margin = new System.Windows.Forms.Padding(1);
 			this.displayDeleteButton.Name = "displayDeleteButton";
 			this.displayDeleteButton.Size = new System.Drawing.Size(69, 23);
 			this.displayDeleteButton.TabIndex = 2;
-			this.displayDeleteButton.Text = "Del";
 			this.displayDeleteButton.UseVisualStyleBackColor = true;
 			this.displayDeleteButton.Click += new System.EventHandler(this.OnLoadedDeleteButtonClick);
 			// 
@@ -1404,12 +1404,12 @@ namespace PdBets
 			// 
 			this.outputPrevButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.outputPrevButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.outputPrevButton.Image = ((System.Drawing.Image)(resources.GetObject("outputPrevButton.Image")));
 			this.outputPrevButton.Location = new System.Drawing.Point(3, 3);
 			this.outputPrevButton.Name = "outputPrevButton";
 			this.tableLayoutPanel15.SetRowSpan(this.outputPrevButton, 2);
 			this.outputPrevButton.Size = new System.Drawing.Size(34, 202);
 			this.outputPrevButton.TabIndex = 0;
-			this.outputPrevButton.Text = "<";
 			this.outputPrevButton.UseVisualStyleBackColor = true;
 			this.outputPrevButton.Click += new System.EventHandler(this.OnFocusedTabPagePrevButtonClick);
 			// 
@@ -1417,12 +1417,12 @@ namespace PdBets
 			// 
 			this.outputNextButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.outputNextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.outputNextButton.Image = ((System.Drawing.Image)(resources.GetObject("outputNextButton.Image")));
 			this.outputNextButton.Location = new System.Drawing.Point(469, 3);
 			this.outputNextButton.Name = "outputNextButton";
 			this.tableLayoutPanel15.SetRowSpan(this.outputNextButton, 2);
 			this.outputNextButton.Size = new System.Drawing.Size(34, 202);
 			this.outputNextButton.TabIndex = 1;
-			this.outputNextButton.Text = ">";
 			this.outputNextButton.UseVisualStyleBackColor = true;
 			this.outputNextButton.Click += new System.EventHandler(this.OnFocusedTabPageNextButtonClick);
 			// 
@@ -1508,12 +1508,12 @@ namespace PdBets
 			// 
 			this.outputUpButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.outputUpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+			this.outputUpButton.Image = ((System.Drawing.Image)(resources.GetObject("outputUpButton.Image")));
 			this.outputUpButton.Location = new System.Drawing.Point(1, 1);
 			this.outputUpButton.Margin = new System.Windows.Forms.Padding(1);
 			this.outputUpButton.Name = "outputUpButton";
 			this.outputUpButton.Size = new System.Drawing.Size(69, 23);
 			this.outputUpButton.TabIndex = 0;
-			this.outputUpButton.Text = "Up";
 			this.outputUpButton.UseVisualStyleBackColor = true;
 			this.outputUpButton.Click += new System.EventHandler(this.OnLoadedUpButtonClick);
 			// 
@@ -1521,12 +1521,12 @@ namespace PdBets
 			// 
 			this.outputDownButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.outputDownButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+			this.outputDownButton.Image = ((System.Drawing.Image)(resources.GetObject("outputDownButton.Image")));
 			this.outputDownButton.Location = new System.Drawing.Point(72, 1);
 			this.outputDownButton.Margin = new System.Windows.Forms.Padding(1);
 			this.outputDownButton.Name = "outputDownButton";
 			this.outputDownButton.Size = new System.Drawing.Size(69, 23);
 			this.outputDownButton.TabIndex = 1;
-			this.outputDownButton.Text = "Down";
 			this.outputDownButton.UseVisualStyleBackColor = true;
 			this.outputDownButton.Click += new System.EventHandler(this.OnLoadedDownButtonClick);
 			// 
@@ -1534,12 +1534,12 @@ namespace PdBets
 			// 
 			this.outputDeleteButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.outputDeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+			this.outputDeleteButton.Image = ((System.Drawing.Image)(resources.GetObject("outputDeleteButton.Image")));
 			this.outputDeleteButton.Location = new System.Drawing.Point(143, 1);
 			this.outputDeleteButton.Margin = new System.Windows.Forms.Padding(1);
 			this.outputDeleteButton.Name = "outputDeleteButton";
 			this.outputDeleteButton.Size = new System.Drawing.Size(69, 23);
 			this.outputDeleteButton.TabIndex = 2;
-			this.outputDeleteButton.Text = "Del";
 			this.outputDeleteButton.UseVisualStyleBackColor = true;
 			this.outputDeleteButton.Click += new System.EventHandler(this.OnLoadedDeleteButtonClick);
 			// 
@@ -1610,12 +1610,15 @@ namespace PdBets
 			// 
 			this.configCreateNewPackButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.configCreateNewPackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+			this.configCreateNewPackButton.Image = ((System.Drawing.Image)(resources.GetObject("configCreateNewPackButton.Image")));
+			this.configCreateNewPackButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.configCreateNewPackButton.Location = new System.Drawing.Point(1, 1);
 			this.configCreateNewPackButton.Margin = new System.Windows.Forms.Padding(1);
 			this.configCreateNewPackButton.Name = "configCreateNewPackButton";
 			this.configCreateNewPackButton.Size = new System.Drawing.Size(211, 23);
 			this.configCreateNewPackButton.TabIndex = 0;
 			this.configCreateNewPackButton.Text = "Create new pack";
+			this.configCreateNewPackButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.configCreateNewPackButton.UseVisualStyleBackColor = true;
 			this.configCreateNewPackButton.Click += new System.EventHandler(this.OnConfigCreateNewPackButtonClick);
 			// 
@@ -1624,22 +1627,22 @@ namespace PdBets
 			this.configModulesTreeView.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.configModulesTreeView.Location = new System.Drawing.Point(3, 3);
 			this.configModulesTreeView.Name = "configModulesTreeView";
-			treeNode6.Name = "inputNode";
-			treeNode6.Text = "Input";
-			treeNode7.Name = "betSelectionNode";
-			treeNode7.Text = "BetSelection";
-			treeNode8.Name = "moneyManagementNode";
-			treeNode8.Text = "MoneyManagement";
-			treeNode9.Name = "displayNode";
-			treeNode9.Text = "Display";
-			treeNode10.Name = "outputNode";
-			treeNode10.Text = "Output";
+			treeNode16.Name = "inputNode";
+			treeNode16.Text = "Input";
+			treeNode17.Name = "betSelectionNode";
+			treeNode17.Text = "BetSelection";
+			treeNode18.Name = "moneyManagementNode";
+			treeNode18.Text = "MoneyManagement";
+			treeNode19.Name = "displayNode";
+			treeNode19.Text = "Display";
+			treeNode20.Name = "outputNode";
+			treeNode20.Text = "Output";
 			this.configModulesTreeView.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-									treeNode6,
-									treeNode7,
-									treeNode8,
-									treeNode9,
-									treeNode10});
+									treeNode16,
+									treeNode17,
+									treeNode18,
+									treeNode19,
+									treeNode20});
 			this.configModulesTreeView.ShowPlusMinus = false;
 			this.configModulesTreeView.Size = new System.Drawing.Size(207, 154);
 			this.configModulesTreeView.TabIndex = 2;
@@ -1649,28 +1652,14 @@ namespace PdBets
 			// 
 			this.configPrevButton.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.configPrevButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.configPrevButton.Image = ((System.Drawing.Image)(resources.GetObject("configPrevButton.Image")));
 			this.configPrevButton.Location = new System.Drawing.Point(3, 3);
 			this.configPrevButton.Name = "configPrevButton";
 			this.configTableLayoutPanel.SetRowSpan(this.configPrevButton, 2);
 			this.configPrevButton.Size = new System.Drawing.Size(34, 202);
 			this.configPrevButton.TabIndex = 0;
-			this.configPrevButton.Text = "<";
 			this.configPrevButton.UseVisualStyleBackColor = true;
 			this.configPrevButton.Click += new System.EventHandler(this.OnFocusedTabPagePrevButtonClick);
-			// 
-			// configLaunchButton
-			// 
-			this.configLaunchButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.configLaunchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.configLaunchButton.ForeColor = System.Drawing.Color.Red;
-			this.configLaunchButton.Location = new System.Drawing.Point(469, 3);
-			this.configLaunchButton.Name = "configLaunchButton";
-			this.configTableLayoutPanel.SetRowSpan(this.configLaunchButton, 2);
-			this.configLaunchButton.Size = new System.Drawing.Size(34, 202);
-			this.configLaunchButton.TabIndex = 1;
-			this.configLaunchButton.Text = ">";
-			this.configLaunchButton.UseVisualStyleBackColor = true;
-			this.configLaunchButton.Click += new System.EventHandler(this.OnConfigLaunchButtonClick);
 			// 
 			// configModulesLabel
 			// 
@@ -1757,6 +1746,20 @@ namespace PdBets
 			this.button4.TabIndex = 0;
 			this.button4.Text = "button4";
 			this.button4.UseVisualStyleBackColor = true;
+			// 
+			// configLaunchButton
+			// 
+			this.configLaunchButton.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.configLaunchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.configLaunchButton.ForeColor = System.Drawing.Color.Red;
+			this.configLaunchButton.Image = ((System.Drawing.Image)(resources.GetObject("configLaunchButton.Image")));
+			this.configLaunchButton.Location = new System.Drawing.Point(469, 3);
+			this.configLaunchButton.Name = "configLaunchButton";
+			this.configTableLayoutPanel.SetRowSpan(this.configLaunchButton, 2);
+			this.configLaunchButton.Size = new System.Drawing.Size(34, 202);
+			this.configLaunchButton.TabIndex = 1;
+			this.configLaunchButton.UseVisualStyleBackColor = true;
+			this.configLaunchButton.Click += new System.EventHandler(this.OnConfigLaunchButtonClick);
 			// 
 			// MainForm
 			// 
