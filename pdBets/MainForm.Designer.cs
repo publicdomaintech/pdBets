@@ -29,11 +29,12 @@ namespace PdBets
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Input");
-			System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("BetSelection");
-			System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("MoneyManagement");
-			System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Display");
-			System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Output");
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+			System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Input");
+			System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("BetSelection");
+			System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("MoneyManagement");
+			System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Display");
+			System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Output");
 			this.mainStatusStrip = new System.Windows.Forms.StatusStrip();
 			this.mainToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
 			this.mainMenuStrip = new System.Windows.Forms.MenuStrip();
@@ -216,7 +217,7 @@ namespace PdBets
 			this.mainToolStripStatusLabel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.mainToolStripStatusLabel.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.mainToolStripStatusLabel.Name = "mainToolStripStatusLabel";
-			this.mainToolStripStatusLabel.Size = new System.Drawing.Size(158, 17);
+			this.mainToolStripStatusLabel.Size = new System.Drawing.Size(116, 17);
 			this.mainToolStripStatusLabel.Text = "Welcome to pdBets";
 			// 
 			// mainMenuStrip
@@ -252,68 +253,72 @@ namespace PdBets
 			// 
 			// newToolStripMenuItem
 			// 
+			this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
 			this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.newToolStripMenuItem.Name = "newToolStripMenuItem";
 			this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-			this.newToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+			this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.newToolStripMenuItem.Text = "&New";
 			// 
 			// openToolStripMenuItem
 			// 
+			this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
 			this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.openToolStripMenuItem.Name = "openToolStripMenuItem";
 			this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-			this.openToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+			this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.openToolStripMenuItem.Text = "&Open";
 			// 
 			// toolStripSeparator
 			// 
 			this.toolStripSeparator.Name = "toolStripSeparator";
-			this.toolStripSeparator.Size = new System.Drawing.Size(137, 6);
+			this.toolStripSeparator.Size = new System.Drawing.Size(149, 6);
 			// 
 			// saveToolStripMenuItem
 			// 
+			this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
 			this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
 			this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-			this.saveToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+			this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.saveToolStripMenuItem.Text = "&Save";
 			// 
 			// saveAsToolStripMenuItem
 			// 
 			this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-			this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+			this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.saveAsToolStripMenuItem.Text = "Save &As";
 			// 
 			// toolStripSeparator1
 			// 
 			this.toolStripSeparator1.Name = "toolStripSeparator1";
-			this.toolStripSeparator1.Size = new System.Drawing.Size(137, 6);
+			this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
 			// 
 			// printToolStripMenuItem
 			// 
+			this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
 			this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.printToolStripMenuItem.Name = "printToolStripMenuItem";
 			this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-			this.printToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+			this.printToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.printToolStripMenuItem.Text = "&Print";
 			// 
 			// printPreviewToolStripMenuItem
 			// 
 			this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-			this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+			this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
 			// 
 			// toolStripSeparator2
 			// 
 			this.toolStripSeparator2.Name = "toolStripSeparator2";
-			this.toolStripSeparator2.Size = new System.Drawing.Size(137, 6);
+			this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
 			// 
 			// exitToolStripMenuItem
 			// 
 			this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-			this.exitToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+			this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.exitToolStripMenuItem.Text = "E&xit";
 			// 
 			// modulesToolStripMenuItem
@@ -410,7 +415,8 @@ namespace PdBets
 			// alwaysOntopToolStripMenuItem
 			// 
 			this.alwaysOntopToolStripMenuItem.Name = "alwaysOntopToolStripMenuItem";
-			this.alwaysOntopToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+			this.alwaysOntopToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
+			this.alwaysOntopToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.alwaysOntopToolStripMenuItem.Text = "Always on &top";
 			this.alwaysOntopToolStripMenuItem.Click += new System.EventHandler(this.OnAlwaysOntopToolStripMenuItemClick);
 			// 
@@ -446,8 +452,9 @@ namespace PdBets
 			// 
 			// aboutToolStripMenuItem
 			// 
+			this.aboutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("aboutToolStripMenuItem.Image")));
 			this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-			this.aboutToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+			this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.aboutToolStripMenuItem.Text = "&About...";
 			this.aboutToolStripMenuItem.Click += new System.EventHandler(this.OnAboutToolStripMenuItemClick);
 			// 
@@ -470,6 +477,7 @@ namespace PdBets
 			// newToolStripButton
 			// 
 			this.newToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.newToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripButton.Image")));
 			this.newToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.newToolStripButton.Name = "newToolStripButton";
 			this.newToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -479,6 +487,7 @@ namespace PdBets
 			// openToolStripButton
 			// 
 			this.openToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
 			this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.openToolStripButton.Name = "openToolStripButton";
 			this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -488,6 +497,7 @@ namespace PdBets
 			// saveToolStripButton
 			// 
 			this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
 			this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.saveToolStripButton.Name = "saveToolStripButton";
 			this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -497,6 +507,7 @@ namespace PdBets
 			// printToolStripButton
 			// 
 			this.printToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.printToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripButton.Image")));
 			this.printToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.printToolStripButton.Name = "printToolStripButton";
 			this.printToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -511,6 +522,7 @@ namespace PdBets
 			// helpToolStripButton
 			// 
 			this.helpToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.helpToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("helpToolStripButton.Image")));
 			this.helpToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.helpToolStripButton.Name = "helpToolStripButton";
 			this.helpToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -1612,22 +1624,22 @@ namespace PdBets
 			this.configModulesTreeView.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.configModulesTreeView.Location = new System.Drawing.Point(3, 3);
 			this.configModulesTreeView.Name = "configModulesTreeView";
-			treeNode1.Name = "inputNode";
-			treeNode1.Text = "Input";
-			treeNode2.Name = "betSelectionNode";
-			treeNode2.Text = "BetSelection";
-			treeNode3.Name = "moneyManagementNode";
-			treeNode3.Text = "MoneyManagement";
-			treeNode4.Name = "displayNode";
-			treeNode4.Text = "Display";
-			treeNode5.Name = "outputNode";
-			treeNode5.Text = "Output";
+			treeNode6.Name = "inputNode";
+			treeNode6.Text = "Input";
+			treeNode7.Name = "betSelectionNode";
+			treeNode7.Text = "BetSelection";
+			treeNode8.Name = "moneyManagementNode";
+			treeNode8.Text = "MoneyManagement";
+			treeNode9.Name = "displayNode";
+			treeNode9.Text = "Display";
+			treeNode10.Name = "outputNode";
+			treeNode10.Text = "Output";
 			this.configModulesTreeView.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-									treeNode1,
-									treeNode2,
-									treeNode3,
-									treeNode4,
-									treeNode5});
+									treeNode6,
+									treeNode7,
+									treeNode8,
+									treeNode9,
+									treeNode10});
 			this.configModulesTreeView.ShowPlusMinus = false;
 			this.configModulesTreeView.Size = new System.Drawing.Size(207, 154);
 			this.configModulesTreeView.TabIndex = 2;

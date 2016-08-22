@@ -37,7 +37,7 @@ namespace PdBets
     using System.Windows.Forms;
 
     /// <summary>
-    /// Description of MainForm.
+    /// The main form of the program.
     /// </summary>
     public partial class MainForm : Form
     {
@@ -101,7 +101,7 @@ namespace PdBets
 
             /* Set game name */
 
-            // TODO Default [load dynamically]
+            // TODO Initial game [load dynamically]
             this.gameName = "Roulette";
 
             /* Set directories variables */
