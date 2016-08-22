@@ -421,7 +421,8 @@ namespace PdBets
         /// <param name="e">Event arguments.</param>
         private void OnPacksLoadButtonClick(object sender, EventArgs e)
         {
-            // Code here
+            // Move to last tab (config)
+            this.modulesTabControl.SelectedIndex = this.modulesTabControl.TabCount - 1;
         }
 
         /// <summary>
