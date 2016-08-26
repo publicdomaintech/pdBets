@@ -210,7 +210,7 @@ namespace PdBets
                 foreach (IPdBets rawModule in this.rawModulesDictionary[moduleType])
                 {
                     // Add to list box
-                    ((ListBox)this.Controls.Find(moduleType.ToLower() + "AvailableListBox", true)[0]).Items.Add(this.sharedCode.FileNameToDisplayName(Path.GetFileNameWithoutExtension(rawModule.GetType().Assembly.Location)));
+                    ((ListBox)this.Controls.Find(moduleType.ToLower() + "AvailableListBox", true)[0]).Items.Add(this.sharedCode.FileNameToDisplayName(rawModule.GetType().Namespace));
                 }
             }
         }
