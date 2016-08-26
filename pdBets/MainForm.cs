@@ -200,8 +200,11 @@ namespace PdBets
             // Iterate module types
             foreach (string moduleType in this.moduleTypesList)
             {
-                // Add current to raw dictionary
+                // Add current to raw modules dictionary
                 this.rawModulesDictionary.Add(moduleType, this.LoadModules(moduleType));
+
+                // Add blank to loaded modules dictionary
+                this.loadedModulesDictionary.Add(moduleType, new List<IPdBets>());
 
                 // Iterate modules list
                 foreach (IPdBets rawModule in this.rawModulesDictionary[moduleType])
@@ -432,7 +435,31 @@ namespace PdBets
         /// <param name="e">Event arguments.</param>
         private void OnConfigLaunchButtonClick(object sender, EventArgs e)
         {
-            // Code here
+            /* Load modules */
+
+            // Iterate module types
+            foreach(string moduleType in this.moduleTypesList)
+            {
+                // Set list box
+                ListBox currentModuleTypeListBox = (ListBox)this.Controls.Find(moduleType + "LoadedListBox", true)[0];
+
+                // Add loaded modules to dictionary in strict order
+                for(int i = 0; i < currentModuleTypeListBox.Items.Count; i++)
+                {
+                    // Set current module
+                    IPdBets currentModule = this.rawModulesDictionary[moduleType].Where(m => m.GetType().Namespace == this.sharedCode.DisplayNameToFileName(currentModuleTypeListBox.Items[i].ToString())).ToList()[0];
+
+                    // Add current module
+                    this.loadedModulesDictionary[moduleType].Add(currentModule);
+
+                    // Check if it's a GUI module
+                    if(currentModule is Form)
+                    {
+                        // Make it visible
+                        ((Form)currentModule).Show();
+                    }
+                }
+            }
         }
 
         /// <summary>

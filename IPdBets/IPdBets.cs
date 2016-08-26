@@ -32,7 +32,7 @@ namespace PdBets
     public interface IPdBets
     {
         /// <summary>
-        /// Processes the specified last input and betString.
+        /// Processes input and bet strings.
         /// </summary>
         /// <param name="inputString">Input string to be casted to current/target game input type.</param>
         /// <param name="betString">Bet string in proper format.</param>
