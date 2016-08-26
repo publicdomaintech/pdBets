@@ -654,43 +654,54 @@ namespace PdBets
         }
 
         /// <summary>
-        /// Opens the tool strip button click.
+        /// Raises the open tool strip button click event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
         /// <param name="e">Event arguments.</param>
-        private void OpenToolStripButtonClick(object sender, EventArgs e)
+        private void OnOpenToolStripButtonClick(object sender, EventArgs e)
         {
             // Code here
         }
 
         /// <summary>
-        /// Saves the tool strip button click.
+        /// Raises the save tool strip button click event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
         /// <param name="e">Event arguments.</param>
-        private void SaveToolStripButtonClick(object sender, EventArgs e)
+        private void OnSaveToolStripButtonClick(object sender, EventArgs e)
         {
             // Code here
         }
 
         /// <summary>
-        /// Prints the tool strip button click.
+        /// Raises the print tool strip button click event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
         /// <param name="e">Event arguments.</param>
-        private void PrintToolStripButtonClick(object sender, EventArgs e)
+        private void OnPrintToolStripButtonClick(object sender, EventArgs e)
         {
             // Code here
         }
 
         /// <summary>
-        /// Helps the tool strip button click.
+        /// Raises the help tool strip button click event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
         /// <param name="e">Event arguments.</param>
-        private void HelpToolStripButtonClick(object sender, EventArgs e)
+        private void OnHelpToolStripButtonClick(object sender, EventArgs e)
         {
             // Code here
         }
+		
+		/// <summary>
+        /// Raises the exit tool strip menu item click event.
+        /// </summary>
+        /// <param name="sender">Sender object.</param>
+        /// <param name="e">Event arguments.</param>
+        private void OnExitToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			// TODO Close form. [Ask user via "Ask on exit" option]
+            this.Close();
+		}
     }
 }

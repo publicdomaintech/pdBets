@@ -30,11 +30,11 @@ namespace PdBets
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-			System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Input");
-			System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("BetSelection");
-			System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("MoneyManagement");
-			System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Display");
-			System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Output");
+			System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Input");
+			System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("BetSelection");
+			System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("MoneyManagement");
+			System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Display");
+			System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Output");
 			this.mainStatusStrip = new System.Windows.Forms.StatusStrip();
 			this.mainToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
 			this.mainMenuStrip = new System.Windows.Forms.MenuStrip();
@@ -156,6 +156,7 @@ namespace PdBets
 			this.configCreateNewPackButton = new System.Windows.Forms.Button();
 			this.configModulesTreeView = new System.Windows.Forms.TreeView();
 			this.configPrevButton = new System.Windows.Forms.Button();
+			this.configLaunchButton = new System.Windows.Forms.Button();
 			this.configModulesLabel = new System.Windows.Forms.Label();
 			this.configSettingsLabel = new System.Windows.Forms.Label();
 			this.configPropertyGrid = new System.Windows.Forms.PropertyGrid();
@@ -164,7 +165,6 @@ namespace PdBets
 			this.listBox2 = new System.Windows.Forms.ListBox();
 			this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
 			this.button4 = new System.Windows.Forms.Button();
-			this.configLaunchButton = new System.Windows.Forms.Button();
 			this.mainStatusStrip.SuspendLayout();
 			this.mainMenuStrip.SuspendLayout();
 			this.mainToolStrip.SuspendLayout();
@@ -320,6 +320,7 @@ namespace PdBets
 			this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
 			this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.exitToolStripMenuItem.Text = "E&xit";
+			this.exitToolStripMenuItem.Click += new System.EventHandler(this.OnExitToolStripMenuItemClick);
 			// 
 			// modulesToolStripMenuItem
 			// 
@@ -492,7 +493,7 @@ namespace PdBets
 			this.openToolStripButton.Name = "openToolStripButton";
 			this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
 			this.openToolStripButton.Text = "&Open";
-			this.openToolStripButton.Click += new System.EventHandler(this.OpenToolStripButtonClick);
+			this.openToolStripButton.Click += new System.EventHandler(this.OnOpenToolStripButtonClick);
 			// 
 			// saveToolStripButton
 			// 
@@ -502,7 +503,7 @@ namespace PdBets
 			this.saveToolStripButton.Name = "saveToolStripButton";
 			this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
 			this.saveToolStripButton.Text = "&Save";
-			this.saveToolStripButton.Click += new System.EventHandler(this.SaveToolStripButtonClick);
+			this.saveToolStripButton.Click += new System.EventHandler(this.OnSaveToolStripButtonClick);
 			// 
 			// printToolStripButton
 			// 
@@ -512,7 +513,7 @@ namespace PdBets
 			this.printToolStripButton.Name = "printToolStripButton";
 			this.printToolStripButton.Size = new System.Drawing.Size(23, 22);
 			this.printToolStripButton.Text = "&Print";
-			this.printToolStripButton.Click += new System.EventHandler(this.PrintToolStripButtonClick);
+			this.printToolStripButton.Click += new System.EventHandler(this.OnPrintToolStripButtonClick);
 			// 
 			// toolStripSeparator3
 			// 
@@ -527,7 +528,7 @@ namespace PdBets
 			this.helpToolStripButton.Name = "helpToolStripButton";
 			this.helpToolStripButton.Size = new System.Drawing.Size(23, 22);
 			this.helpToolStripButton.Text = "He&lp";
-			this.helpToolStripButton.Click += new System.EventHandler(this.HelpToolStripButtonClick);
+			this.helpToolStripButton.Click += new System.EventHandler(this.OnHelpToolStripButtonClick);
 			// 
 			// toolStripContainer1
 			// 
@@ -1627,22 +1628,22 @@ namespace PdBets
 			this.configModulesTreeView.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.configModulesTreeView.Location = new System.Drawing.Point(3, 3);
 			this.configModulesTreeView.Name = "configModulesTreeView";
-			treeNode16.Name = "inputNode";
-			treeNode16.Text = "Input";
-			treeNode17.Name = "betSelectionNode";
-			treeNode17.Text = "BetSelection";
-			treeNode18.Name = "moneyManagementNode";
-			treeNode18.Text = "MoneyManagement";
-			treeNode19.Name = "displayNode";
-			treeNode19.Text = "Display";
-			treeNode20.Name = "outputNode";
-			treeNode20.Text = "Output";
+			treeNode1.Name = "inputNode";
+			treeNode1.Text = "Input";
+			treeNode2.Name = "betSelectionNode";
+			treeNode2.Text = "BetSelection";
+			treeNode3.Name = "moneyManagementNode";
+			treeNode3.Text = "MoneyManagement";
+			treeNode4.Name = "displayNode";
+			treeNode4.Text = "Display";
+			treeNode5.Name = "outputNode";
+			treeNode5.Text = "Output";
 			this.configModulesTreeView.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-									treeNode16,
-									treeNode17,
-									treeNode18,
-									treeNode19,
-									treeNode20});
+									treeNode1,
+									treeNode2,
+									treeNode3,
+									treeNode4,
+									treeNode5});
 			this.configModulesTreeView.ShowPlusMinus = false;
 			this.configModulesTreeView.Size = new System.Drawing.Size(207, 154);
 			this.configModulesTreeView.TabIndex = 2;
@@ -1660,6 +1661,20 @@ namespace PdBets
 			this.configPrevButton.TabIndex = 0;
 			this.configPrevButton.UseVisualStyleBackColor = true;
 			this.configPrevButton.Click += new System.EventHandler(this.OnFocusedTabPagePrevButtonClick);
+			// 
+			// configLaunchButton
+			// 
+			this.configLaunchButton.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.configLaunchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.configLaunchButton.ForeColor = System.Drawing.Color.Red;
+			this.configLaunchButton.Image = ((System.Drawing.Image)(resources.GetObject("configLaunchButton.Image")));
+			this.configLaunchButton.Location = new System.Drawing.Point(469, 3);
+			this.configLaunchButton.Name = "configLaunchButton";
+			this.configTableLayoutPanel.SetRowSpan(this.configLaunchButton, 2);
+			this.configLaunchButton.Size = new System.Drawing.Size(34, 202);
+			this.configLaunchButton.TabIndex = 1;
+			this.configLaunchButton.UseVisualStyleBackColor = true;
+			this.configLaunchButton.Click += new System.EventHandler(this.OnConfigLaunchButtonClick);
 			// 
 			// configModulesLabel
 			// 
@@ -1746,20 +1761,6 @@ namespace PdBets
 			this.button4.TabIndex = 0;
 			this.button4.Text = "button4";
 			this.button4.UseVisualStyleBackColor = true;
-			// 
-			// configLaunchButton
-			// 
-			this.configLaunchButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.configLaunchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.configLaunchButton.ForeColor = System.Drawing.Color.Red;
-			this.configLaunchButton.Image = ((System.Drawing.Image)(resources.GetObject("configLaunchButton.Image")));
-			this.configLaunchButton.Location = new System.Drawing.Point(469, 3);
-			this.configLaunchButton.Name = "configLaunchButton";
-			this.configTableLayoutPanel.SetRowSpan(this.configLaunchButton, 2);
-			this.configLaunchButton.Size = new System.Drawing.Size(34, 202);
-			this.configLaunchButton.TabIndex = 1;
-			this.configLaunchButton.UseVisualStyleBackColor = true;
-			this.configLaunchButton.Click += new System.EventHandler(this.OnConfigLaunchButtonClick);
 			// 
 			// MainForm
 			// 
