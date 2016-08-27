@@ -99,7 +99,7 @@ namespace PdBets
                         fileName = fileName.Insert(matches[i].Index, char.ConvertFromUtf32(intVal).ToString());
                     }
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     // Let it fall through
                 }

@@ -27,7 +27,7 @@ namespace PdBets
     using System.Collections.Generic;
 
     /// <summary>
-    /// The main interface.
+    /// The IPdBets interface.
     /// </summary>
     public interface IPdBets
     {

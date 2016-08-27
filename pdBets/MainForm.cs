@@ -225,7 +225,7 @@ namespace PdBets
         /// <summary>
         /// Loads the modules.
         /// </summary>
-        /// <returns>The loaded modules list.</returns>
+        /// <returns>The loaded modules IEnumerable.</returns>
         /// <param name="moduleType">Module type.</param>
         private IEnumerable<IPdBets> LoadModules(string moduleType)
         {
@@ -252,6 +252,16 @@ namespace PdBets
 
             // Return the loaded modules
             return this.LoadedModules;
+        }
+
+        /// <summary>
+        /// Raises the new input event.
+        /// </summary>
+        /// <param name="sender">Sender object.</param>
+        /// <param name="e">Event arguments.</param>
+        private void OnNewInput(object sender, NewInputEventArgs e)
+        {
+            // e.InputString
         }
 
         /// <summary>
@@ -438,13 +448,13 @@ namespace PdBets
             /* Load modules */
 
             // Iterate module types
-            foreach(string moduleType in this.moduleTypesList)
+            foreach (string moduleType in this.moduleTypesList)
             {
                 // Set list box
                 ListBox currentModuleTypeListBox = (ListBox)this.Controls.Find(moduleType + "LoadedListBox", true)[0];
 
                 // Add loaded modules to dictionary in strict order
-                for(int i = 0; i < currentModuleTypeListBox.Items.Count; i++)
+                for (int i = 0; i < currentModuleTypeListBox.Items.Count; i++)
                 {
                     // Set current module
                     IPdBets currentModule = this.rawModulesDictionary[moduleType].Where(m => m.GetType().Namespace == this.sharedCode.DisplayNameToFileName(currentModuleTypeListBox.Items[i].ToString())).ToList()[0];
@@ -453,12 +463,42 @@ namespace PdBets
                     this.loadedModulesDictionary[moduleType].Add(currentModule);
 
                     // Check if it's a GUI module
-                    if(currentModule is Form)
+                    if (currentModule is Form)
                     {
                         // Make it visible
                         ((Form)currentModule).Show();
                     }
                 }
+            }
+
+            /* Subscribe to new input */
+
+            // Iterate loaded input modules
+            foreach (IPdBets currentInputModule in this.loadedModulesDictionary["Input"])
+            {
+                // Declare event info
+                EventInfo eventInfo = null;
+
+                // Optional event
+                try
+                {
+                    // Set event info
+                    eventInfo = currentInputModule.GetType().GetEvent("NewInput");
+                }
+                catch (Exception)
+                {
+                    // No new input event, skip
+                    continue;
+                }
+
+                // Set method info
+                MethodInfo methodInfo = this.GetType().GetMethod("OnNewInput", BindingFlags.NonPublic | BindingFlags.Instance);
+
+                // Set event handler delegate
+                Delegate eventHandlerDelegate = Delegate.CreateDelegate(eventInfo.EventHandlerType, this, methodInfo);
+
+                // Add event handler
+                eventInfo.AddEventHandler(currentInputModule, eventHandlerDelegate);
             }
         }
 
@@ -692,16 +732,16 @@ namespace PdBets
         {
             // Code here
         }
-		
-		/// <summary>
+
+        /// <summary>
         /// Raises the exit tool strip menu item click event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
         /// <param name="e">Event arguments.</param>
         private void OnExitToolStripMenuItemClick(object sender, EventArgs e)
-		{
-			// TODO Close form. [Ask user via "Ask on exit" option]
+        {
+            // TODO Close form. [Ask user via "Ask on exit" option]
             this.Close();
-		}
+        }
     }
 }
