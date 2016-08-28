@@ -22,10 +22,6 @@
 /// </summary>
 namespace PdBets
 {
-    // Directives
-    using System;
-    using System.Collections.Generic;
-
     /// <summary>
     /// The IPdBets interface.
     /// </summary>
