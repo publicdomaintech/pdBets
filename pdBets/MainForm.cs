@@ -187,7 +187,23 @@ namespace PdBets
                 this.lastSelectedTabPageItemsDictionary.Add(tabPage.Name, new string[0]);
             }
 
-            /* Prepare variables to load modules */
+            /* Load utilities then add valid ones to menu */
+
+            // Add utilities to raw modules dictionary
+            this.rawModulesDictionary.Add("Utilities", this.LoadModules("Utilities"));
+
+            // Add blank to loaded modules dictionary
+            this.loadedModulesDictionary.Add("Utilities", new List<IPdBets>());
+
+            // Fetch UtilityInfoDictionary
+
+            // Get menuPath value
+
+            // Add to utilities menu
+
+            // Add to utility modules dictionary
+
+            /* Set module types list sans utilities */
 
             // Set module types
             this.moduleTypesList = this.moduleTypeDirectoriesList;
@@ -195,7 +211,7 @@ namespace PdBets
             // Remove "Utilities"
             this.moduleTypesList.Remove("Utilities");
 
-            /* Load modules sans utilities */
+            /* Load standard modules */
 
             // Iterate module types
             foreach (string moduleType in this.moduleTypesList)
