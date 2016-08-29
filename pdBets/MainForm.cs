@@ -87,9 +87,9 @@ namespace PdBets
         private string gameName;
 
         /// <summary>
-        /// The shared code.
+        /// The converter.
         /// </summary>
-        private SharedCode sharedCode = new SharedCode();
+        private Converter converter = new Converter();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="PdBets.MainForm"/> class.
@@ -192,9 +192,6 @@ namespace PdBets
             // Add utilities to raw modules dictionary
             this.rawModulesDictionary.Add("Utilities", this.LoadModules("Utilities"));
 
-            // Add blank to loaded modules dictionary
-            this.loadedModulesDictionary.Add("Utilities", new List<IPdBets>());
-
             // Fetch UtilityInfoDictionary
 
             // Get menuPath value
@@ -226,7 +223,7 @@ namespace PdBets
                 foreach (IPdBets rawModule in this.rawModulesDictionary[moduleType])
                 {
                     // Add to list box
-                    ((ListBox)this.Controls.Find(moduleType.ToLower() + "AvailableListBox", true)[0]).Items.Add(this.sharedCode.FileNameToDisplayName(rawModule.GetType().Namespace));
+                    ((ListBox)this.Controls.Find(moduleType.ToLower() + "AvailableListBox", true)[0]).Items.Add(this.converter.FileNameToDisplayName(rawModule.GetType().Namespace));
                 }
             }
         }
@@ -473,7 +470,7 @@ namespace PdBets
                 for (int i = 0; i < currentModuleTypeListBox.Items.Count; i++)
                 {
                     // Set current module
-                    IPdBets currentModule = this.rawModulesDictionary[moduleType].Where(m => m.GetType().Namespace == this.sharedCode.DisplayNameToFileName(currentModuleTypeListBox.Items[i].ToString())).ToList()[0];
+                    IPdBets currentModule = this.rawModulesDictionary[moduleType].Where(m => m.GetType().Namespace == this.converter.DisplayNameToFileName(currentModuleTypeListBox.Items[i].ToString())).ToList()[0];
 
                     // Add current module
                     this.loadedModulesDictionary[moduleType].Add(currentModule);

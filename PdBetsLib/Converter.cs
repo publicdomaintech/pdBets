@@ -1,4 +1,4 @@
-﻿// <copyright file="SharedCode.cs" company="www.PublicDomain.tech">All rights waived.</copyright>
+﻿// <copyright file="Converter.cs" company="www.PublicDomain.tech">All rights waived.</copyright>
 
 // Programmed by Victor L. Senior (VLS) <support@publicdomain.tech>, 2016
 //
@@ -18,7 +18,7 @@
 // <http://creativecommons.org/publicdomain/zero/1.0/>
 
 /// <summary>
-/// Shared code.
+/// Converter.
 /// </summary>
 namespace PdBets
 {
@@ -29,9 +29,9 @@ namespace PdBets
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Shared code.
+    /// Converter class.
     /// </summary>
-    public class SharedCode
+    public class Converter
     {
         /// <summary>
         /// Changes passed display name to file name.

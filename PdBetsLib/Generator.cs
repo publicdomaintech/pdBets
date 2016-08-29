@@ -1,4 +1,4 @@
-﻿// <copyright file="NewInputEventArgs.cs" company="www.PublicDomain.tech">All rights waived.</copyright>
+﻿// <copyright file="Generator.cs" company="www.PublicDomain.tech">All rights waived.</copyright>
 
 // Programmed by Victor L. Senior (VLS) <support@publicdomain.tech>, 2016
 //
@@ -18,7 +18,7 @@
 // <http://creativecommons.org/publicdomain/zero/1.0/>
 
 /// <summary>
-/// New input event arguments.
+/// Generator.
 /// </summary>
 namespace PdBets
 {
@@ -26,24 +26,15 @@ namespace PdBets
     using System;
 
     /// <summary>
-    /// New input event arguments.
+    /// Generator class.
     /// </summary>
-    public class NewInputEventArgs : EventArgs
+    public class Generator
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="PdBets.NewInputEventArgs"/> class.
+        /// Initializes a new instance of the <see cref="PdBets.Generator"/> class.
         /// </summary>
-        /// <param name="inputString">Input string.</param>
-        public NewInputEventArgs(string inputString)
+        public Generator()
         {
-            // Set input string
-            this.InputString = inputString;
         }
-
-        /// <summary>
-        /// Gets or sets the input string.
-        /// </summary>
-        /// <value>The input string.</value>
-        public string InputString { get; set; }
     }
 }
