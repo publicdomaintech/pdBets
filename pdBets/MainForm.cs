@@ -20,9 +20,6 @@
 /// <summary>
 /// Main form.
 /// </summary>
-using System.Diagnostics;
-
-
 namespace PdBets
 {
     // Directives
@@ -32,6 +29,7 @@ namespace PdBets
     using System.ComponentModel.Composition;
     using System.ComponentModel.Composition.Hosting;
     using System.ComponentModel.Composition.Primitives;
+    using System.Diagnostics;
     using System.Drawing;
     using System.IO;
     using System.Linq;
@@ -95,9 +93,14 @@ namespace PdBets
         private string gameName;
 
         /// <summary>
-        /// The converter.
+        /// The converter class instance.
         /// </summary>
         private Converter converter = new Converter();
+
+        /// <summary>
+        /// The roulette class instance.
+        /// </summary>
+        private Roulette roulette = new Roulette();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="PdBets.MainForm"/> class.
@@ -247,7 +250,7 @@ namespace PdBets
                     // Add to target's drop down items
                     targetToolStripMenuItem.DropDownItems.Add(dynamicUtilityToolStripMenuItem);
                 }
-                catch (Exception ex)
+                catch (Exception /*ex*/)
                 {
                     // TODO Log error
                 }
@@ -327,7 +330,71 @@ namespace PdBets
         /// <param name="e">Event arguments.</param>
         private void OnNewInput(object sender, NewInputEventArgs e)
         {
-            // e.InputString
+            // Set input string
+            string inputString = e.InputString;
+
+            // TODO Validate input string according to game [Add more games when available]
+            switch (this.gameName)
+            {
+            // Validate roulette
+                case "Roulette":
+
+                    // Check if it's a valid roulette number
+                    if (!this.roulette.ValidateRouletteNumber(inputString))
+                    {
+                        // Break method
+                        return;
+                    }
+
+                    // Halt flow
+                    break;
+            }
+
+            // Set previous bet string
+            string previousBetString = string.Empty;
+
+            // Set processed bet string
+            string processedBetString = string.Empty;
+
+            /* Pass input string to loaded modules in strict order */
+
+            // Iterate module types list
+            for (int i = 0; i < this.moduleTypesList.Count; i++)
+            {
+                // Set current module type
+                string moduleType = this.moduleTypesList[i];
+            
+                // Check there are loaded modules for current module type
+                if (this.loadedModulesDictionary[moduleType].Count > 0)
+                {
+                    // Respect order
+                    for (int j = 0; j < this.loadedModulesDictionary[moduleType].Count; j++)
+                    {
+                        // Set previous bet string
+                        previousBetString = processedBetString;
+
+                        // Call input (on current module)
+                        processedBetString = this.loadedModulesDictionary[moduleType][i].Input(inputString, previousBetString);
+
+                        // TODO Validate according to game [Add more games when available]
+                        switch (this.gameName)
+                        {
+                        // Validate roulette
+                            case "Roulette":
+
+                                // Check if processed bet string is valid
+                                if (!this.roulette.ValidateBetString(processedBetString))
+                                {
+                                    // Not valid, return to previous one
+                                    processedBetString = previousBetString;
+                                }
+
+                            // Halt flow
+                                break;
+                        }
+                    }
+                }
+            }
         }
 
         /// <summary>
@@ -335,13 +402,13 @@ namespace PdBets
         /// </summary>
         /// <param name="sender">Sender object.</param>
         /// <param name="e">Event argumetns.</param>
-        private void OnDynamicUtilityToolStripMenuItemClick (object sender, EventArgs e)
+        private void OnDynamicUtilityToolStripMenuItemClick(object sender, EventArgs e)
         {
             // Set clicked utility tool strip menu item
             ToolStripMenuItem clickedUtilityToolStripMenuItem = (ToolStripMenuItem)sender;
 
             // Check if name is present on utilities dictionary
-            if(this.utilitiesDictionary.ContainsKey(clickedUtilityToolStripMenuItem.Name))
+            if (this.utilitiesDictionary.ContainsKey(clickedUtilityToolStripMenuItem.Name))
             {
                 // There is, send show message
                 this.utilitiesDictionary[clickedUtilityToolStripMenuItem.Name].Input("-S", string.Empty);
