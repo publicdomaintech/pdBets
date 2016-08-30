@@ -20,6 +20,9 @@
 /// <summary>
 /// Main form.
 /// </summary>
+using System.Diagnostics;
+
+
 namespace PdBets
 {
     // Directives
@@ -75,6 +78,11 @@ namespace PdBets
         /// The loaded modules dictionary.
         /// </summary>
         private Dictionary<string, List<IPdBets>> loadedModulesDictionary = new Dictionary<string, List<IPdBets>>();
+
+        /// <summary>
+        /// The utilities dictionary.
+        /// </summary>
+        private Dictionary<string, IPdBets> utilitiesDictionary = new Dictionary<string, IPdBets>();
 
         /// <summary>
         /// The module types list.
@@ -189,16 +197,61 @@ namespace PdBets
 
             /* Load utilities then add valid ones to menu */
 
-            // Add utilities to raw modules dictionary
-            this.rawModulesDictionary.Add("Utilities", this.LoadModules("Utilities"));
+            // Set utilities categories
+            List<string> utilitiesCategories = new List<string>()
+            {
+                "Converters",
+                "Generators"
+            };
 
-            // Fetch UtilityInfoDictionary
+            // Assign each to utilities dictionary
+            foreach (IPdBets utilityModule in this.LoadModules("Utilities"))
+            {
+                // Declare menu path
+                string menuPath;
 
-            // Get menuPath value
+                try
+                {
+                    // Set utility module namespace
+                    string utilityModuleNamespace = utilityModule.GetType().Namespace;
 
-            // Add to utilities menu
+                    // Assign to dictionary
+                    this.utilitiesDictionary.Add(utilityModuleNamespace, utilityModule);
 
-            // Add to utility modules dictionary
+                    try
+                    {
+                        // Set menu path
+                        menuPath = ((Dictionary<string, object>)utilityModule.GetType().GetProperty("ModuleDictionary").GetValue(utilityModule, null))["menuPath"].ToString();
+                    }
+                    catch (Exception)
+                    {
+                        // No menu path, set to empty string
+                        menuPath = string.Empty;
+                    }
+
+                    // Declare and initialize dynamic utility tool strip menu item
+                    ToolStripMenuItem dynamicUtilityToolStripMenuItem = new ToolStripMenuItem();
+
+                    // Set dynamic utility tool strip menu item name
+                    dynamicUtilityToolStripMenuItem.Name = utilityModuleNamespace;
+
+                    // Set dynamic utility tool strip menu item text
+                    dynamicUtilityToolStripMenuItem.Text = this.converter.FileNameToDisplayName(utilityModuleNamespace);
+
+                    // Set dynamic utility tool strip menu item click event handler
+                    dynamicUtilityToolStripMenuItem.Click += this.OnDynamicUtilityToolStripMenuItemClick;
+
+                    // Set target tool strip menu item
+                    ToolStripMenuItem targetToolStripMenuItem = utilitiesCategories.Contains(menuPath) ? (ToolStripMenuItem)this.utilitiesToolStripMenuItem.DropDownItems.Find(menuPath.ToLower() + "ToolStripMenuItem", true)[0] : this.generalToolStripMenuItem;
+
+                    // Add to target's drop down items
+                    targetToolStripMenuItem.DropDownItems.Add(dynamicUtilityToolStripMenuItem);
+                }
+                catch (Exception ex)
+                {
+                    // TODO Log error
+                }
+            }
 
             /* Set module types list sans utilities */
 
@@ -275,6 +328,24 @@ namespace PdBets
         private void OnNewInput(object sender, NewInputEventArgs e)
         {
             // e.InputString
+        }
+
+        /// <summary>
+        /// Raises the dynamic tool strip menu item click event.
+        /// </summary>
+        /// <param name="sender">Sender object.</param>
+        /// <param name="e">Event argumetns.</param>
+        private void OnDynamicUtilityToolStripMenuItemClick (object sender, EventArgs e)
+        {
+            // Set clicked utility tool strip menu item
+            ToolStripMenuItem clickedUtilityToolStripMenuItem = (ToolStripMenuItem)sender;
+
+            // Check if name is present on utilities dictionary
+            if(this.utilitiesDictionary.ContainsKey(clickedUtilityToolStripMenuItem.Name))
+            {
+                // There is, send show message
+                this.utilitiesDictionary[clickedUtilityToolStripMenuItem.Name].Input("-S", string.Empty);
+            }
         }
 
         /// <summary>
