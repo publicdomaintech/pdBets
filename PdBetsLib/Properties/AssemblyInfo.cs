@@ -11,7 +11,7 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("www.PublicDomain.tech")]
 [assembly: AssemblyProduct("")]
-[assembly: AssemblyCopyright("Victor L. Senior (VLS)")]
+[assembly: AssemblyCopyright("Copyright 2016")]
 [assembly: AssemblyTrademark("PublicDomain.tech")]
 [assembly: AssemblyCulture("")]
 

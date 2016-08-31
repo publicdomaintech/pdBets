@@ -374,7 +374,7 @@ namespace PdBets
                         previousBetString = processedBetString;
 
                         // Call input (on current module)
-                        processedBetString = this.loadedModulesDictionary[moduleType][i].Input(inputString, previousBetString);
+                        processedBetString = this.loadedModulesDictionary[moduleType][j].Input(inputString, previousBetString);
 
                         // TODO Validate according to game [Add more games when available]
                         switch (this.gameName)
