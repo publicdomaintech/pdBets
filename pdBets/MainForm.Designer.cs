@@ -69,6 +69,9 @@ namespace PdBets
 			this.locationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.checkedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.utilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.generalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.generatorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.convertersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.mainToolStrip = new System.Windows.Forms.ToolStrip();
@@ -169,9 +172,6 @@ namespace PdBets
 			this.listBox2 = new System.Windows.Forms.ListBox();
 			this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
 			this.button4 = new System.Windows.Forms.Button();
-			this.generalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.generatorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.convertersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.mainStatusStrip.SuspendLayout();
 			this.mainMenuStrip.SuspendLayout();
 			this.mainToolStrip.SuspendLayout();
@@ -348,7 +348,7 @@ namespace PdBets
 									this.outputToolStripMenuItem,
 									this.utilityToolStripMenuItem});
 			this.importToolStripMenuItem.Name = "importToolStripMenuItem";
-			this.importToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.importToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
 			this.importToolStripMenuItem.Text = "&Import";
 			this.importToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.OnImportToolStripMenuItemDropDownItemClicked);
 			// 
@@ -396,7 +396,7 @@ namespace PdBets
 									this.naturallyToolStripMenuItem,
 									this.visuallyToolStripMenuItem});
 			this.generateToolStripMenuItem.Name = "generateToolStripMenuItem";
-			this.generateToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.generateToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
 			this.generateToolStripMenuItem.Text = "&Generate";
 			// 
 			// connectorToolStripMenuItem
@@ -483,6 +483,24 @@ namespace PdBets
 			this.utilitiesToolStripMenuItem.Name = "utilitiesToolStripMenuItem";
 			this.utilitiesToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
 			this.utilitiesToolStripMenuItem.Text = "&Utilities";
+			// 
+			// generalToolStripMenuItem
+			// 
+			this.generalToolStripMenuItem.Name = "generalToolStripMenuItem";
+			this.generalToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+			this.generalToolStripMenuItem.Text = "&General";
+			// 
+			// generatorsToolStripMenuItem
+			// 
+			this.generatorsToolStripMenuItem.Name = "generatorsToolStripMenuItem";
+			this.generatorsToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+			this.generatorsToolStripMenuItem.Text = "&Generators";
+			// 
+			// convertersToolStripMenuItem
+			// 
+			this.convertersToolStripMenuItem.Name = "convertersToolStripMenuItem";
+			this.convertersToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+			this.convertersToolStripMenuItem.Text = "&Converters";
 			// 
 			// helpToolStripMenuItem
 			// 
@@ -1803,24 +1821,6 @@ namespace PdBets
 			this.button4.Text = "button4";
 			this.button4.UseVisualStyleBackColor = true;
 			// 
-			// generalToolStripMenuItem
-			// 
-			this.generalToolStripMenuItem.Name = "generalToolStripMenuItem";
-			this.generalToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-			this.generalToolStripMenuItem.Text = "&General";
-			// 
-			// generatorsToolStripMenuItem
-			// 
-			this.generatorsToolStripMenuItem.Name = "generatorsToolStripMenuItem";
-			this.generatorsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-			this.generatorsToolStripMenuItem.Text = "&Generators";
-			// 
-			// convertersToolStripMenuItem
-			// 
-			this.convertersToolStripMenuItem.Name = "convertersToolStripMenuItem";
-			this.convertersToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-			this.convertersToolStripMenuItem.Text = "&Converters";
-			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1829,6 +1829,7 @@ namespace PdBets
 			this.Controls.Add(this.toolStripContainer1);
 			this.Controls.Add(this.mainStatusStrip);
 			this.Controls.Add(this.mainMenuStrip);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MainMenuStrip = this.mainMenuStrip;
 			this.Name = "MainForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
