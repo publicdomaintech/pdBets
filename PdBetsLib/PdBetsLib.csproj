@@ -37,6 +37,7 @@
     <Compile Include="Converter.cs" />
     <Compile Include="Generator.cs" />
     <Compile Include="Roulette.cs" />
+    <Compile Include="Validator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
