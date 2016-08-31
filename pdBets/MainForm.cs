@@ -229,6 +229,7 @@ namespace PdBets
                     // Assign to dictionary
                     this.utilitiesDictionary.Add(utilityModuleNamespace, utilityModule);
 
+                    // Try to set menu path
                     try
                     {
                         // Set menu path
@@ -238,6 +239,21 @@ namespace PdBets
                     {
                         // No menu path, set to empty string
                         menuPath = string.Empty;
+                    }
+
+                    // Try to set form icon
+                    try
+                    {
+                        // Check if it's a GUI module
+                        if (utilityModule is Form)
+                        {
+                            // TODO Set current module icon [Include check to skip non-default icon]
+                            ((Form)utilityModule).Icon = this.Icon;
+                        }
+                    }
+                    catch (Exception)
+                    {
+                            // Let it flow
                     }
 
                     // Declare and initialize dynamic utility tool strip menu item
@@ -342,12 +358,12 @@ namespace PdBets
             string inputString = e.InputString;
 
             // First check if it's a valid internal message
-            if(!this.validator.ValidateInternalMessage(inputString))
+            if (!this.validator.ValidateInternalMessage(inputString))
             {
                 // Not a valid internal message, validate according to game
                 switch (this.gameName)
                 {
-                    // Validate roulette
+                // Validate roulette
                     case "Roulette":
 
                         // Check it's a valid roulette number, or a valid internal message
@@ -628,8 +644,14 @@ namespace PdBets
                     // Check if it's a GUI module
                     if (currentModule is Form)
                     {
+                        // Set current module form
+                        Form currentModuleForm = (Form)currentModule;
+
+                        // TODO Set current module icon [Include check to skip non-default icon]
+                        currentModuleForm.Icon = this.Icon;
+                        
                         // Make it visible
-                        ((Form)currentModule).Show();
+                        currentModuleForm.Show();
                     }
                 }
             }
