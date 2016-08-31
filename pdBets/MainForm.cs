@@ -20,6 +20,9 @@
 /// <summary>
 /// Main form.
 /// </summary>
+using PdBetsLib;
+
+
 namespace PdBets
 {
     // Directives
@@ -96,6 +99,11 @@ namespace PdBets
         /// The converter class instance.
         /// </summary>
         private Converter converter = new Converter();
+
+        /// <summary>
+        /// The validator class instance.
+        /// </summary>
+        private Validator validator = new Validator();
 
         /// <summary>
         /// The roulette class instance.
@@ -333,21 +341,25 @@ namespace PdBets
             // Set input string
             string inputString = e.InputString;
 
-            // TODO Validate input string according to game [Add more games when available]
-            switch (this.gameName)
+            // First check if it's a valid internal message
+            if(!this.validator.ValidateInternalMessage(inputString))
             {
-            // Validate roulette
-                case "Roulette":
+                // Not a valid internal message, validate according to game
+                switch (this.gameName)
+                {
+                    // Validate roulette
+                    case "Roulette":
 
-                    // Check if it's a valid roulette number
-                    if (!this.roulette.ValidateRouletteNumber(inputString))
-                    {
-                        // Break method
-                        return;
-                    }
+                        // Check it's a valid roulette number, or a valid internal message
+                        if (!this.roulette.ValidateRouletteNumber(inputString))
+                        {
+                            // Break method
+                            return;
+                        }
 
-                    // Halt flow
-                    break;
+                        // Halt flow
+                        break;
+                }
             }
 
             // Set previous bet string
