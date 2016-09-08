@@ -105,6 +105,27 @@ namespace PdBets
         }
 
         /// <summary>
+        /// Gets the roulette number.
+        /// </summary>
+        /// <returns>-1 or the roulette number.</returns>
+        /// <param name="numberString">Number string.</param>
+        public int GetRouletteNumber(string numberString)
+        {
+            // Declare number integer
+            int numberInteger;
+
+            // Try to parse as integer
+            if (int.TryParse(numberString, out numberInteger) && this.ValidateRouletteNumber(numberInteger))
+            {
+                // Is valid
+                return numberInteger;
+            }
+
+            // Is invalid
+            return -1;
+        }
+
+        /// <summary>
         /// Validates the bet string.
         /// </summary>
         /// <returns><c>true</c>, if bet string was validated, <c>false</c> otherwise.</returns>
