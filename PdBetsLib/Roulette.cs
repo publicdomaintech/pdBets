@@ -20,6 +20,9 @@
 /// <summary>
 /// Roulette.
 /// </summary>
+using System.Linq;
+
+
 namespace PdBets
 {
     // Directives
@@ -123,6 +126,20 @@ namespace PdBets
 
             // Is invalid
             return -1;
+        }
+
+        /// <summary>
+        /// Gets the roulette numbers list.
+        /// </summary>
+        /// <returns>The roulette numbers list.</returns>
+        public List<int> GetRouletteNumbersList()
+        {
+            // Set start
+            int start = this.wheelNumbers == 36 ? 1 : 0;
+
+            // Return generated numbers list
+            return Enumerable.Range(start, this.wheelNumbers == 38 ? this.wheelNumbers : this.wheelNumbers - start).ToList();
+            
         }
 
         /// <summary>
