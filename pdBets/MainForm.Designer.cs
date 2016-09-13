@@ -30,11 +30,11 @@ namespace PdBets
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-			System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Input");
-			System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("BetSelection");
-			System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("MoneyManagement");
-			System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Display");
-			System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Output");
+			System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Input");
+			System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("BetSelection");
+			System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("MoneyManagement");
+			System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Display");
+			System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Output");
 			this.mainStatusStrip = new System.Windows.Forms.StatusStrip();
 			this.mainToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
 			this.mainMenuStrip = new System.Windows.Forms.MenuStrip();
@@ -85,16 +85,16 @@ namespace PdBets
 			this.modulesTabControl = new System.Windows.Forms.TabControl();
 			this.packsTabPage = new System.Windows.Forms.TabPage();
 			this.packsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-			this.packsLoadButton = new System.Windows.Forms.Button();
-			this.packsNextButton = new System.Windows.Forms.Button();
 			this.packsAvailableLabel = new System.Windows.Forms.Label();
 			this.packsModulesLabel = new System.Windows.Forms.Label();
 			this.packsAvailableListBox = new System.Windows.Forms.ListBox();
 			this.packsModulesTreeView = new System.Windows.Forms.TreeView();
+			this.packsNextTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+			this.packsNextButtonToConfig = new System.Windows.Forms.Button();
+			this.packsNextButton = new System.Windows.Forms.Button();
+			this.packsLaunchButton = new System.Windows.Forms.Button();
 			this.inputTabPage = new System.Windows.Forms.TabPage();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-			this.inputPrevButton = new System.Windows.Forms.Button();
-			this.inputNextButton = new System.Windows.Forms.Button();
 			this.modulesAvailableLabel = new System.Windows.Forms.Label();
 			this.inputLoadedLabel = new System.Windows.Forms.Label();
 			this.inputAvailableListBox = new System.Windows.Forms.ListBox();
@@ -104,10 +104,14 @@ namespace PdBets
 			this.inputUpButton = new System.Windows.Forms.Button();
 			this.inputDownButton = new System.Windows.Forms.Button();
 			this.inputDeleteButton = new System.Windows.Forms.Button();
+			this.inputNextTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+			this.inputNextButtonToConfig = new System.Windows.Forms.Button();
+			this.inputNextButton = new System.Windows.Forms.Button();
+			this.inputPrevTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+			this.inputPrevButtonToConfig = new System.Windows.Forms.Button();
+			this.inputPrevButton = new System.Windows.Forms.Button();
 			this.betSelectionTabPage = new System.Windows.Forms.TabPage();
 			this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-			this.betSelectionPrevButton = new System.Windows.Forms.Button();
-			this.betSelectionNextButton = new System.Windows.Forms.Button();
 			this.betSelectionAvailableLabel = new System.Windows.Forms.Label();
 			this.betSelectionLoadedLabel = new System.Windows.Forms.Label();
 			this.betSelectionAvailableListBox = new System.Windows.Forms.ListBox();
@@ -117,10 +121,14 @@ namespace PdBets
 			this.betSelectionUpButton = new System.Windows.Forms.Button();
 			this.betSelectionDownButton = new System.Windows.Forms.Button();
 			this.betSelectionDeleteButton = new System.Windows.Forms.Button();
+			this.betSelectionPrevTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+			this.betSelectionPrevButtonToPacks = new System.Windows.Forms.Button();
+			this.betSelectionPrevButton = new System.Windows.Forms.Button();
+			this.betSelectionNextTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+			this.betSelectionNextButtonToConfig = new System.Windows.Forms.Button();
+			this.betSelectionNextButton = new System.Windows.Forms.Button();
 			this.moneyManagementTabPage = new System.Windows.Forms.TabPage();
 			this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-			this.moneyManagementPrevButton = new System.Windows.Forms.Button();
-			this.moneyManagementNextButton = new System.Windows.Forms.Button();
 			this.moneyManagementAvailableLabel = new System.Windows.Forms.Label();
 			this.moneyManagementLoadedLabel = new System.Windows.Forms.Label();
 			this.moneyManagementAvailableListBox = new System.Windows.Forms.ListBox();
@@ -130,10 +138,14 @@ namespace PdBets
 			this.moneyManagementUpButton = new System.Windows.Forms.Button();
 			this.moneyManagementDownButton = new System.Windows.Forms.Button();
 			this.moneyManagementDeleteButton = new System.Windows.Forms.Button();
+			this.moneyManagementPrevTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+			this.moneyManagementPrevButtonToPacks = new System.Windows.Forms.Button();
+			this.moneyManagementPrevButton = new System.Windows.Forms.Button();
+			this.moneyManagementNextTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+			this.moneyManagementNextButtonToConfig = new System.Windows.Forms.Button();
+			this.moneyManagementNextButton = new System.Windows.Forms.Button();
 			this.displayTabPage = new System.Windows.Forms.TabPage();
 			this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-			this.displayPrevButton = new System.Windows.Forms.Button();
-			this.displayNextButton = new System.Windows.Forms.Button();
 			this.displayAvailableLabel = new System.Windows.Forms.Label();
 			this.displayLoadedLabel = new System.Windows.Forms.Label();
 			this.displayAvailableListBox = new System.Windows.Forms.ListBox();
@@ -143,10 +155,14 @@ namespace PdBets
 			this.displayUpButton = new System.Windows.Forms.Button();
 			this.displayDownButton = new System.Windows.Forms.Button();
 			this.displayDeleteButton = new System.Windows.Forms.Button();
+			this.displayPrevTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+			this.displayPrevButtonToPacks = new System.Windows.Forms.Button();
+			this.displayPrevButton = new System.Windows.Forms.Button();
+			this.displayNextTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+			this.displayNextButtonToConfig = new System.Windows.Forms.Button();
+			this.displayNextButton = new System.Windows.Forms.Button();
 			this.outputTabPage = new System.Windows.Forms.TabPage();
 			this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
-			this.outputPrevButton = new System.Windows.Forms.Button();
-			this.outputNextButton = new System.Windows.Forms.Button();
 			this.outputAvailableLabel = new System.Windows.Forms.Label();
 			this.outputLoadedLabel = new System.Windows.Forms.Label();
 			this.outputAvailableListBox = new System.Windows.Forms.ListBox();
@@ -156,17 +172,25 @@ namespace PdBets
 			this.outputUpButton = new System.Windows.Forms.Button();
 			this.outputDownButton = new System.Windows.Forms.Button();
 			this.outputDeleteButton = new System.Windows.Forms.Button();
+			this.outputPrevTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+			this.outputPrevButtonToPacks = new System.Windows.Forms.Button();
+			this.outputPrevButton = new System.Windows.Forms.Button();
+			this.outputNextTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+			this.outputNextButtonToConfig = new System.Windows.Forms.Button();
+			this.outputNextButton = new System.Windows.Forms.Button();
 			this.configTabPage = new System.Windows.Forms.TabPage();
 			this.configTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
 			this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
 			this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
 			this.configCreateNewPackButton = new System.Windows.Forms.Button();
 			this.configModulesTreeView = new System.Windows.Forms.TreeView();
-			this.configPrevButton = new System.Windows.Forms.Button();
 			this.configLaunchButton = new System.Windows.Forms.Button();
 			this.configModulesLabel = new System.Windows.Forms.Label();
 			this.configSettingsLabel = new System.Windows.Forms.Label();
 			this.configPropertyGrid = new System.Windows.Forms.PropertyGrid();
+			this.configPrevTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+			this.configPrevButtonToPacks = new System.Windows.Forms.Button();
+			this.configPrevButton = new System.Windows.Forms.Button();
 			this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
 			this.label2 = new System.Windows.Forms.Label();
 			this.listBox2 = new System.Windows.Forms.ListBox();
@@ -181,30 +205,42 @@ namespace PdBets
 			this.modulesTabControl.SuspendLayout();
 			this.packsTabPage.SuspendLayout();
 			this.packsTableLayoutPanel.SuspendLayout();
+			this.packsNextTableLayoutPanel.SuspendLayout();
 			this.inputTabPage.SuspendLayout();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.tableLayoutPanel3.SuspendLayout();
+			this.inputNextTableLayoutPanel.SuspendLayout();
+			this.inputPrevTableLayoutPanel.SuspendLayout();
 			this.betSelectionTabPage.SuspendLayout();
 			this.tableLayoutPanel5.SuspendLayout();
 			this.tableLayoutPanel7.SuspendLayout();
 			this.tableLayoutPanel8.SuspendLayout();
+			this.betSelectionPrevTableLayoutPanel.SuspendLayout();
+			this.betSelectionNextTableLayoutPanel.SuspendLayout();
 			this.moneyManagementTabPage.SuspendLayout();
 			this.tableLayoutPanel9.SuspendLayout();
 			this.tableLayoutPanel10.SuspendLayout();
 			this.tableLayoutPanel11.SuspendLayout();
+			this.moneyManagementPrevTableLayoutPanel.SuspendLayout();
+			this.moneyManagementNextTableLayoutPanel.SuspendLayout();
 			this.displayTabPage.SuspendLayout();
 			this.tableLayoutPanel12.SuspendLayout();
 			this.tableLayoutPanel13.SuspendLayout();
 			this.tableLayoutPanel14.SuspendLayout();
+			this.displayPrevTableLayoutPanel.SuspendLayout();
+			this.displayNextTableLayoutPanel.SuspendLayout();
 			this.outputTabPage.SuspendLayout();
 			this.tableLayoutPanel15.SuspendLayout();
 			this.tableLayoutPanel16.SuspendLayout();
 			this.tableLayoutPanel17.SuspendLayout();
+			this.outputPrevTableLayoutPanel.SuspendLayout();
+			this.outputNextTableLayoutPanel.SuspendLayout();
 			this.configTabPage.SuspendLayout();
 			this.configTableLayoutPanel.SuspendLayout();
 			this.tableLayoutPanel18.SuspendLayout();
 			this.tableLayoutPanel19.SuspendLayout();
+			this.configPrevTableLayoutPanel.SuspendLayout();
 			this.tableLayoutPanel4.SuspendLayout();
 			this.tableLayoutPanel6.SuspendLayout();
 			this.SuspendLayout();
@@ -646,12 +682,12 @@ namespace PdBets
 			this.packsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.packsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.packsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-			this.packsTableLayoutPanel.Controls.Add(this.packsLoadButton, 0, 0);
-			this.packsTableLayoutPanel.Controls.Add(this.packsNextButton, 3, 0);
 			this.packsTableLayoutPanel.Controls.Add(this.packsAvailableLabel, 1, 0);
 			this.packsTableLayoutPanel.Controls.Add(this.packsModulesLabel, 2, 0);
 			this.packsTableLayoutPanel.Controls.Add(this.packsAvailableListBox, 1, 1);
 			this.packsTableLayoutPanel.Controls.Add(this.packsModulesTreeView, 2, 1);
+			this.packsTableLayoutPanel.Controls.Add(this.packsNextTableLayoutPanel, 3, 0);
+			this.packsTableLayoutPanel.Controls.Add(this.packsLaunchButton, 0, 0);
 			this.packsTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.packsTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
 			this.packsTableLayoutPanel.Name = "packsTableLayoutPanel";
@@ -660,32 +696,6 @@ namespace PdBets
 			this.packsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.packsTableLayoutPanel.Size = new System.Drawing.Size(506, 208);
 			this.packsTableLayoutPanel.TabIndex = 1;
-			// 
-			// packsLoadButton
-			// 
-			this.packsLoadButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.packsLoadButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.packsLoadButton.Image = ((System.Drawing.Image)(resources.GetObject("packsLoadButton.Image")));
-			this.packsLoadButton.Location = new System.Drawing.Point(3, 3);
-			this.packsLoadButton.Name = "packsLoadButton";
-			this.packsTableLayoutPanel.SetRowSpan(this.packsLoadButton, 2);
-			this.packsLoadButton.Size = new System.Drawing.Size(34, 202);
-			this.packsLoadButton.TabIndex = 0;
-			this.packsLoadButton.UseVisualStyleBackColor = true;
-			this.packsLoadButton.Click += new System.EventHandler(this.OnPacksLoadButtonClick);
-			// 
-			// packsNextButton
-			// 
-			this.packsNextButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.packsNextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.packsNextButton.Image = ((System.Drawing.Image)(resources.GetObject("packsNextButton.Image")));
-			this.packsNextButton.Location = new System.Drawing.Point(469, 3);
-			this.packsNextButton.Name = "packsNextButton";
-			this.packsTableLayoutPanel.SetRowSpan(this.packsNextButton, 2);
-			this.packsNextButton.Size = new System.Drawing.Size(34, 202);
-			this.packsNextButton.TabIndex = 1;
-			this.packsNextButton.UseVisualStyleBackColor = true;
-			this.packsNextButton.Click += new System.EventHandler(this.OnFocusedTabPageNextButtonClick);
 			// 
 			// packsAvailableLabel
 			// 
@@ -728,6 +738,57 @@ namespace PdBets
 			this.packsModulesTreeView.TabIndex = 5;
 			this.packsModulesTreeView.BeforeCollapse += new System.Windows.Forms.TreeViewCancelEventHandler(this.OnPacksModulesTreeViewBeforeCollapse);
 			// 
+			// packsNextTableLayoutPanel
+			// 
+			this.packsNextTableLayoutPanel.ColumnCount = 1;
+			this.packsNextTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.packsNextTableLayoutPanel.Controls.Add(this.packsNextButtonToConfig, 0, 0);
+			this.packsNextTableLayoutPanel.Controls.Add(this.packsNextButton, 0, 1);
+			this.packsNextTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.packsNextTableLayoutPanel.Location = new System.Drawing.Point(466, 0);
+			this.packsNextTableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
+			this.packsNextTableLayoutPanel.Name = "packsNextTableLayoutPanel";
+			this.packsNextTableLayoutPanel.RowCount = 2;
+			this.packsTableLayoutPanel.SetRowSpan(this.packsNextTableLayoutPanel, 2);
+			this.packsNextTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.packsNextTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+			this.packsNextTableLayoutPanel.Size = new System.Drawing.Size(40, 208);
+			this.packsNextTableLayoutPanel.TabIndex = 6;
+			// 
+			// packsNextButtonToConfig
+			// 
+			this.packsNextButtonToConfig.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.packsNextButtonToConfig.Image = ((System.Drawing.Image)(resources.GetObject("packsNextButtonToConfig.Image")));
+			this.packsNextButtonToConfig.Location = new System.Drawing.Point(3, 3);
+			this.packsNextButtonToConfig.Name = "packsNextButtonToConfig";
+			this.packsNextButtonToConfig.Size = new System.Drawing.Size(34, 35);
+			this.packsNextButtonToConfig.TabIndex = 0;
+			this.packsNextButtonToConfig.UseVisualStyleBackColor = true;
+			this.packsNextButtonToConfig.Click += new System.EventHandler(this.OnButtonGoToConfigClick);
+			// 
+			// packsNextButton
+			// 
+			this.packsNextButton.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.packsNextButton.Image = ((System.Drawing.Image)(resources.GetObject("packsNextButton.Image")));
+			this.packsNextButton.Location = new System.Drawing.Point(3, 44);
+			this.packsNextButton.Name = "packsNextButton";
+			this.packsNextButton.Size = new System.Drawing.Size(34, 161);
+			this.packsNextButton.TabIndex = 1;
+			this.packsNextButton.UseVisualStyleBackColor = true;
+			this.packsNextButton.Click += new System.EventHandler(this.OnFocusedTabPageNextButtonClick);
+			// 
+			// packsLaunchButton
+			// 
+			this.packsLaunchButton.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.packsLaunchButton.Image = ((System.Drawing.Image)(resources.GetObject("packsLaunchButton.Image")));
+			this.packsLaunchButton.Location = new System.Drawing.Point(3, 3);
+			this.packsLaunchButton.Name = "packsLaunchButton";
+			this.packsTableLayoutPanel.SetRowSpan(this.packsLaunchButton, 2);
+			this.packsLaunchButton.Size = new System.Drawing.Size(34, 202);
+			this.packsLaunchButton.TabIndex = 7;
+			this.packsLaunchButton.UseVisualStyleBackColor = true;
+			this.packsLaunchButton.Click += new System.EventHandler(this.OnLaunchButtonClick);
+			// 
 			// inputTabPage
 			// 
 			this.inputTabPage.Controls.Add(this.tableLayoutPanel1);
@@ -745,12 +806,12 @@ namespace PdBets
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-			this.tableLayoutPanel1.Controls.Add(this.inputPrevButton, 0, 0);
-			this.tableLayoutPanel1.Controls.Add(this.inputNextButton, 3, 0);
 			this.tableLayoutPanel1.Controls.Add(this.modulesAvailableLabel, 1, 0);
 			this.tableLayoutPanel1.Controls.Add(this.inputLoadedLabel, 2, 0);
 			this.tableLayoutPanel1.Controls.Add(this.inputAvailableListBox, 1, 1);
 			this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 2, 1);
+			this.tableLayoutPanel1.Controls.Add(this.inputNextTableLayoutPanel, 3, 0);
+			this.tableLayoutPanel1.Controls.Add(this.inputPrevTableLayoutPanel, 0, 0);
 			this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
 			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -759,32 +820,6 @@ namespace PdBets
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.tableLayoutPanel1.Size = new System.Drawing.Size(506, 208);
 			this.tableLayoutPanel1.TabIndex = 2;
-			// 
-			// inputPrevButton
-			// 
-			this.inputPrevButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.inputPrevButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.inputPrevButton.Image = ((System.Drawing.Image)(resources.GetObject("inputPrevButton.Image")));
-			this.inputPrevButton.Location = new System.Drawing.Point(3, 3);
-			this.inputPrevButton.Name = "inputPrevButton";
-			this.tableLayoutPanel1.SetRowSpan(this.inputPrevButton, 2);
-			this.inputPrevButton.Size = new System.Drawing.Size(34, 202);
-			this.inputPrevButton.TabIndex = 0;
-			this.inputPrevButton.UseVisualStyleBackColor = true;
-			this.inputPrevButton.Click += new System.EventHandler(this.OnFocusedTabPagePrevButtonClick);
-			// 
-			// inputNextButton
-			// 
-			this.inputNextButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.inputNextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.inputNextButton.Image = ((System.Drawing.Image)(resources.GetObject("inputNextButton.Image")));
-			this.inputNextButton.Location = new System.Drawing.Point(469, 3);
-			this.inputNextButton.Name = "inputNextButton";
-			this.tableLayoutPanel1.SetRowSpan(this.inputNextButton, 2);
-			this.inputNextButton.Size = new System.Drawing.Size(34, 202);
-			this.inputNextButton.TabIndex = 1;
-			this.inputNextButton.UseVisualStyleBackColor = true;
-			this.inputNextButton.Click += new System.EventHandler(this.OnFocusedTabPageNextButtonClick);
 			// 
 			// modulesAvailableLabel
 			// 
@@ -903,6 +938,84 @@ namespace PdBets
 			this.inputDeleteButton.UseVisualStyleBackColor = true;
 			this.inputDeleteButton.Click += new System.EventHandler(this.OnLoadedDeleteButtonClick);
 			// 
+			// inputNextTableLayoutPanel
+			// 
+			this.inputNextTableLayoutPanel.ColumnCount = 1;
+			this.inputNextTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.inputNextTableLayoutPanel.Controls.Add(this.inputNextButtonToConfig, 0, 0);
+			this.inputNextTableLayoutPanel.Controls.Add(this.inputNextButton, 0, 1);
+			this.inputNextTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.inputNextTableLayoutPanel.Location = new System.Drawing.Point(466, 0);
+			this.inputNextTableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
+			this.inputNextTableLayoutPanel.Name = "inputNextTableLayoutPanel";
+			this.inputNextTableLayoutPanel.RowCount = 2;
+			this.tableLayoutPanel1.SetRowSpan(this.inputNextTableLayoutPanel, 2);
+			this.inputNextTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.inputNextTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+			this.inputNextTableLayoutPanel.Size = new System.Drawing.Size(40, 208);
+			this.inputNextTableLayoutPanel.TabIndex = 6;
+			// 
+			// inputNextButtonToConfig
+			// 
+			this.inputNextButtonToConfig.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.inputNextButtonToConfig.Image = ((System.Drawing.Image)(resources.GetObject("inputNextButtonToConfig.Image")));
+			this.inputNextButtonToConfig.Location = new System.Drawing.Point(3, 3);
+			this.inputNextButtonToConfig.Name = "inputNextButtonToConfig";
+			this.inputNextButtonToConfig.Size = new System.Drawing.Size(34, 35);
+			this.inputNextButtonToConfig.TabIndex = 0;
+			this.inputNextButtonToConfig.UseVisualStyleBackColor = true;
+			this.inputNextButtonToConfig.Click += new System.EventHandler(this.OnButtonGoToConfigClick);
+			// 
+			// inputNextButton
+			// 
+			this.inputNextButton.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.inputNextButton.Image = ((System.Drawing.Image)(resources.GetObject("inputNextButton.Image")));
+			this.inputNextButton.Location = new System.Drawing.Point(3, 44);
+			this.inputNextButton.Name = "inputNextButton";
+			this.inputNextButton.Size = new System.Drawing.Size(34, 161);
+			this.inputNextButton.TabIndex = 1;
+			this.inputNextButton.UseVisualStyleBackColor = true;
+			this.inputNextButton.Click += new System.EventHandler(this.OnFocusedTabPageNextButtonClick);
+			// 
+			// inputPrevTableLayoutPanel
+			// 
+			this.inputPrevTableLayoutPanel.ColumnCount = 1;
+			this.inputPrevTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.inputPrevTableLayoutPanel.Controls.Add(this.inputPrevButtonToConfig, 0, 0);
+			this.inputPrevTableLayoutPanel.Controls.Add(this.inputPrevButton, 0, 1);
+			this.inputPrevTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.inputPrevTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
+			this.inputPrevTableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
+			this.inputPrevTableLayoutPanel.Name = "inputPrevTableLayoutPanel";
+			this.inputPrevTableLayoutPanel.RowCount = 2;
+			this.tableLayoutPanel1.SetRowSpan(this.inputPrevTableLayoutPanel, 2);
+			this.inputPrevTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.inputPrevTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+			this.inputPrevTableLayoutPanel.Size = new System.Drawing.Size(40, 208);
+			this.inputPrevTableLayoutPanel.TabIndex = 7;
+			// 
+			// inputPrevButtonToConfig
+			// 
+			this.inputPrevButtonToConfig.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.inputPrevButtonToConfig.Image = ((System.Drawing.Image)(resources.GetObject("inputPrevButtonToConfig.Image")));
+			this.inputPrevButtonToConfig.Location = new System.Drawing.Point(3, 3);
+			this.inputPrevButtonToConfig.Name = "inputPrevButtonToConfig";
+			this.inputPrevButtonToConfig.Size = new System.Drawing.Size(34, 35);
+			this.inputPrevButtonToConfig.TabIndex = 0;
+			this.inputPrevButtonToConfig.UseVisualStyleBackColor = true;
+			this.inputPrevButtonToConfig.Click += new System.EventHandler(this.OnButtonGoToPacksClick);
+			// 
+			// inputPrevButton
+			// 
+			this.inputPrevButton.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.inputPrevButton.Image = ((System.Drawing.Image)(resources.GetObject("inputPrevButton.Image")));
+			this.inputPrevButton.Location = new System.Drawing.Point(3, 44);
+			this.inputPrevButton.Name = "inputPrevButton";
+			this.inputPrevButton.Size = new System.Drawing.Size(34, 161);
+			this.inputPrevButton.TabIndex = 1;
+			this.inputPrevButton.UseVisualStyleBackColor = true;
+			this.inputPrevButton.Click += new System.EventHandler(this.OnFocusedTabPagePrevButtonClick);
+			// 
 			// betSelectionTabPage
 			// 
 			this.betSelectionTabPage.Controls.Add(this.tableLayoutPanel5);
@@ -920,12 +1033,12 @@ namespace PdBets
 			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-			this.tableLayoutPanel5.Controls.Add(this.betSelectionPrevButton, 0, 0);
-			this.tableLayoutPanel5.Controls.Add(this.betSelectionNextButton, 3, 0);
 			this.tableLayoutPanel5.Controls.Add(this.betSelectionAvailableLabel, 1, 0);
 			this.tableLayoutPanel5.Controls.Add(this.betSelectionLoadedLabel, 2, 0);
 			this.tableLayoutPanel5.Controls.Add(this.betSelectionAvailableListBox, 1, 1);
 			this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel7, 2, 1);
+			this.tableLayoutPanel5.Controls.Add(this.betSelectionPrevTableLayoutPanel, 0, 0);
+			this.tableLayoutPanel5.Controls.Add(this.betSelectionNextTableLayoutPanel, 3, 0);
 			this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
 			this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -934,32 +1047,6 @@ namespace PdBets
 			this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.tableLayoutPanel5.Size = new System.Drawing.Size(506, 208);
 			this.tableLayoutPanel5.TabIndex = 3;
-			// 
-			// betSelectionPrevButton
-			// 
-			this.betSelectionPrevButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.betSelectionPrevButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.betSelectionPrevButton.Image = ((System.Drawing.Image)(resources.GetObject("betSelectionPrevButton.Image")));
-			this.betSelectionPrevButton.Location = new System.Drawing.Point(3, 3);
-			this.betSelectionPrevButton.Name = "betSelectionPrevButton";
-			this.tableLayoutPanel5.SetRowSpan(this.betSelectionPrevButton, 2);
-			this.betSelectionPrevButton.Size = new System.Drawing.Size(34, 202);
-			this.betSelectionPrevButton.TabIndex = 0;
-			this.betSelectionPrevButton.UseVisualStyleBackColor = true;
-			this.betSelectionPrevButton.Click += new System.EventHandler(this.OnFocusedTabPagePrevButtonClick);
-			// 
-			// betSelectionNextButton
-			// 
-			this.betSelectionNextButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.betSelectionNextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.betSelectionNextButton.Image = ((System.Drawing.Image)(resources.GetObject("betSelectionNextButton.Image")));
-			this.betSelectionNextButton.Location = new System.Drawing.Point(469, 3);
-			this.betSelectionNextButton.Name = "betSelectionNextButton";
-			this.tableLayoutPanel5.SetRowSpan(this.betSelectionNextButton, 2);
-			this.betSelectionNextButton.Size = new System.Drawing.Size(34, 202);
-			this.betSelectionNextButton.TabIndex = 1;
-			this.betSelectionNextButton.UseVisualStyleBackColor = true;
-			this.betSelectionNextButton.Click += new System.EventHandler(this.OnFocusedTabPageNextButtonClick);
 			// 
 			// betSelectionAvailableLabel
 			// 
@@ -1078,6 +1165,84 @@ namespace PdBets
 			this.betSelectionDeleteButton.UseVisualStyleBackColor = true;
 			this.betSelectionDeleteButton.Click += new System.EventHandler(this.OnLoadedDeleteButtonClick);
 			// 
+			// betSelectionPrevTableLayoutPanel
+			// 
+			this.betSelectionPrevTableLayoutPanel.ColumnCount = 1;
+			this.betSelectionPrevTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.betSelectionPrevTableLayoutPanel.Controls.Add(this.betSelectionPrevButtonToPacks, 0, 0);
+			this.betSelectionPrevTableLayoutPanel.Controls.Add(this.betSelectionPrevButton, 0, 1);
+			this.betSelectionPrevTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.betSelectionPrevTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
+			this.betSelectionPrevTableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
+			this.betSelectionPrevTableLayoutPanel.Name = "betSelectionPrevTableLayoutPanel";
+			this.betSelectionPrevTableLayoutPanel.RowCount = 2;
+			this.tableLayoutPanel5.SetRowSpan(this.betSelectionPrevTableLayoutPanel, 2);
+			this.betSelectionPrevTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.betSelectionPrevTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+			this.betSelectionPrevTableLayoutPanel.Size = new System.Drawing.Size(40, 208);
+			this.betSelectionPrevTableLayoutPanel.TabIndex = 6;
+			// 
+			// betSelectionPrevButtonToPacks
+			// 
+			this.betSelectionPrevButtonToPacks.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.betSelectionPrevButtonToPacks.Image = ((System.Drawing.Image)(resources.GetObject("betSelectionPrevButtonToPacks.Image")));
+			this.betSelectionPrevButtonToPacks.Location = new System.Drawing.Point(3, 3);
+			this.betSelectionPrevButtonToPacks.Name = "betSelectionPrevButtonToPacks";
+			this.betSelectionPrevButtonToPacks.Size = new System.Drawing.Size(34, 35);
+			this.betSelectionPrevButtonToPacks.TabIndex = 0;
+			this.betSelectionPrevButtonToPacks.UseVisualStyleBackColor = true;
+			this.betSelectionPrevButtonToPacks.Click += new System.EventHandler(this.OnButtonGoToPacksClick);
+			// 
+			// betSelectionPrevButton
+			// 
+			this.betSelectionPrevButton.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.betSelectionPrevButton.Image = ((System.Drawing.Image)(resources.GetObject("betSelectionPrevButton.Image")));
+			this.betSelectionPrevButton.Location = new System.Drawing.Point(3, 44);
+			this.betSelectionPrevButton.Name = "betSelectionPrevButton";
+			this.betSelectionPrevButton.Size = new System.Drawing.Size(34, 161);
+			this.betSelectionPrevButton.TabIndex = 1;
+			this.betSelectionPrevButton.UseVisualStyleBackColor = true;
+			this.betSelectionPrevButton.Click += new System.EventHandler(this.OnFocusedTabPagePrevButtonClick);
+			// 
+			// betSelectionNextTableLayoutPanel
+			// 
+			this.betSelectionNextTableLayoutPanel.ColumnCount = 1;
+			this.betSelectionNextTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.betSelectionNextTableLayoutPanel.Controls.Add(this.betSelectionNextButtonToConfig, 0, 0);
+			this.betSelectionNextTableLayoutPanel.Controls.Add(this.betSelectionNextButton, 0, 1);
+			this.betSelectionNextTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.betSelectionNextTableLayoutPanel.Location = new System.Drawing.Point(466, 0);
+			this.betSelectionNextTableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
+			this.betSelectionNextTableLayoutPanel.Name = "betSelectionNextTableLayoutPanel";
+			this.betSelectionNextTableLayoutPanel.RowCount = 2;
+			this.tableLayoutPanel5.SetRowSpan(this.betSelectionNextTableLayoutPanel, 2);
+			this.betSelectionNextTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.betSelectionNextTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+			this.betSelectionNextTableLayoutPanel.Size = new System.Drawing.Size(40, 208);
+			this.betSelectionNextTableLayoutPanel.TabIndex = 7;
+			// 
+			// betSelectionNextButtonToConfig
+			// 
+			this.betSelectionNextButtonToConfig.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.betSelectionNextButtonToConfig.Image = ((System.Drawing.Image)(resources.GetObject("betSelectionNextButtonToConfig.Image")));
+			this.betSelectionNextButtonToConfig.Location = new System.Drawing.Point(3, 3);
+			this.betSelectionNextButtonToConfig.Name = "betSelectionNextButtonToConfig";
+			this.betSelectionNextButtonToConfig.Size = new System.Drawing.Size(34, 35);
+			this.betSelectionNextButtonToConfig.TabIndex = 0;
+			this.betSelectionNextButtonToConfig.UseVisualStyleBackColor = true;
+			this.betSelectionNextButtonToConfig.Click += new System.EventHandler(this.OnButtonGoToConfigClick);
+			// 
+			// betSelectionNextButton
+			// 
+			this.betSelectionNextButton.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.betSelectionNextButton.Image = ((System.Drawing.Image)(resources.GetObject("betSelectionNextButton.Image")));
+			this.betSelectionNextButton.Location = new System.Drawing.Point(3, 44);
+			this.betSelectionNextButton.Name = "betSelectionNextButton";
+			this.betSelectionNextButton.Size = new System.Drawing.Size(34, 161);
+			this.betSelectionNextButton.TabIndex = 1;
+			this.betSelectionNextButton.UseVisualStyleBackColor = true;
+			this.betSelectionNextButton.Click += new System.EventHandler(this.OnFocusedTabPageNextButtonClick);
+			// 
 			// moneyManagementTabPage
 			// 
 			this.moneyManagementTabPage.Controls.Add(this.tableLayoutPanel9);
@@ -1095,12 +1260,12 @@ namespace PdBets
 			this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-			this.tableLayoutPanel9.Controls.Add(this.moneyManagementPrevButton, 0, 0);
-			this.tableLayoutPanel9.Controls.Add(this.moneyManagementNextButton, 3, 0);
 			this.tableLayoutPanel9.Controls.Add(this.moneyManagementAvailableLabel, 1, 0);
 			this.tableLayoutPanel9.Controls.Add(this.moneyManagementLoadedLabel, 2, 0);
 			this.tableLayoutPanel9.Controls.Add(this.moneyManagementAvailableListBox, 1, 1);
 			this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel10, 2, 1);
+			this.tableLayoutPanel9.Controls.Add(this.moneyManagementPrevTableLayoutPanel, 0, 0);
+			this.tableLayoutPanel9.Controls.Add(this.moneyManagementNextTableLayoutPanel, 3, 0);
 			this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel9.Location = new System.Drawing.Point(0, 0);
 			this.tableLayoutPanel9.Name = "tableLayoutPanel9";
@@ -1109,32 +1274,6 @@ namespace PdBets
 			this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.tableLayoutPanel9.Size = new System.Drawing.Size(506, 208);
 			this.tableLayoutPanel9.TabIndex = 3;
-			// 
-			// moneyManagementPrevButton
-			// 
-			this.moneyManagementPrevButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.moneyManagementPrevButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.moneyManagementPrevButton.Image = ((System.Drawing.Image)(resources.GetObject("moneyManagementPrevButton.Image")));
-			this.moneyManagementPrevButton.Location = new System.Drawing.Point(3, 3);
-			this.moneyManagementPrevButton.Name = "moneyManagementPrevButton";
-			this.tableLayoutPanel9.SetRowSpan(this.moneyManagementPrevButton, 2);
-			this.moneyManagementPrevButton.Size = new System.Drawing.Size(34, 202);
-			this.moneyManagementPrevButton.TabIndex = 0;
-			this.moneyManagementPrevButton.UseVisualStyleBackColor = true;
-			this.moneyManagementPrevButton.Click += new System.EventHandler(this.OnFocusedTabPagePrevButtonClick);
-			// 
-			// moneyManagementNextButton
-			// 
-			this.moneyManagementNextButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.moneyManagementNextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.moneyManagementNextButton.Image = ((System.Drawing.Image)(resources.GetObject("moneyManagementNextButton.Image")));
-			this.moneyManagementNextButton.Location = new System.Drawing.Point(469, 3);
-			this.moneyManagementNextButton.Name = "moneyManagementNextButton";
-			this.tableLayoutPanel9.SetRowSpan(this.moneyManagementNextButton, 2);
-			this.moneyManagementNextButton.Size = new System.Drawing.Size(34, 202);
-			this.moneyManagementNextButton.TabIndex = 1;
-			this.moneyManagementNextButton.UseVisualStyleBackColor = true;
-			this.moneyManagementNextButton.Click += new System.EventHandler(this.OnFocusedTabPageNextButtonClick);
 			// 
 			// moneyManagementAvailableLabel
 			// 
@@ -1253,6 +1392,84 @@ namespace PdBets
 			this.moneyManagementDeleteButton.UseVisualStyleBackColor = true;
 			this.moneyManagementDeleteButton.Click += new System.EventHandler(this.OnLoadedDeleteButtonClick);
 			// 
+			// moneyManagementPrevTableLayoutPanel
+			// 
+			this.moneyManagementPrevTableLayoutPanel.ColumnCount = 1;
+			this.moneyManagementPrevTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.moneyManagementPrevTableLayoutPanel.Controls.Add(this.moneyManagementPrevButtonToPacks, 0, 0);
+			this.moneyManagementPrevTableLayoutPanel.Controls.Add(this.moneyManagementPrevButton, 0, 1);
+			this.moneyManagementPrevTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.moneyManagementPrevTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
+			this.moneyManagementPrevTableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
+			this.moneyManagementPrevTableLayoutPanel.Name = "moneyManagementPrevTableLayoutPanel";
+			this.moneyManagementPrevTableLayoutPanel.RowCount = 2;
+			this.tableLayoutPanel9.SetRowSpan(this.moneyManagementPrevTableLayoutPanel, 2);
+			this.moneyManagementPrevTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.moneyManagementPrevTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+			this.moneyManagementPrevTableLayoutPanel.Size = new System.Drawing.Size(40, 208);
+			this.moneyManagementPrevTableLayoutPanel.TabIndex = 6;
+			// 
+			// moneyManagementPrevButtonToPacks
+			// 
+			this.moneyManagementPrevButtonToPacks.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.moneyManagementPrevButtonToPacks.Image = ((System.Drawing.Image)(resources.GetObject("moneyManagementPrevButtonToPacks.Image")));
+			this.moneyManagementPrevButtonToPacks.Location = new System.Drawing.Point(3, 3);
+			this.moneyManagementPrevButtonToPacks.Name = "moneyManagementPrevButtonToPacks";
+			this.moneyManagementPrevButtonToPacks.Size = new System.Drawing.Size(34, 35);
+			this.moneyManagementPrevButtonToPacks.TabIndex = 0;
+			this.moneyManagementPrevButtonToPacks.UseVisualStyleBackColor = true;
+			this.moneyManagementPrevButtonToPacks.Click += new System.EventHandler(this.OnButtonGoToPacksClick);
+			// 
+			// moneyManagementPrevButton
+			// 
+			this.moneyManagementPrevButton.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.moneyManagementPrevButton.Image = ((System.Drawing.Image)(resources.GetObject("moneyManagementPrevButton.Image")));
+			this.moneyManagementPrevButton.Location = new System.Drawing.Point(3, 44);
+			this.moneyManagementPrevButton.Name = "moneyManagementPrevButton";
+			this.moneyManagementPrevButton.Size = new System.Drawing.Size(34, 161);
+			this.moneyManagementPrevButton.TabIndex = 1;
+			this.moneyManagementPrevButton.UseVisualStyleBackColor = true;
+			this.moneyManagementPrevButton.Click += new System.EventHandler(this.OnFocusedTabPagePrevButtonClick);
+			// 
+			// moneyManagementNextTableLayoutPanel
+			// 
+			this.moneyManagementNextTableLayoutPanel.ColumnCount = 1;
+			this.moneyManagementNextTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.moneyManagementNextTableLayoutPanel.Controls.Add(this.moneyManagementNextButtonToConfig, 0, 0);
+			this.moneyManagementNextTableLayoutPanel.Controls.Add(this.moneyManagementNextButton, 0, 1);
+			this.moneyManagementNextTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.moneyManagementNextTableLayoutPanel.Location = new System.Drawing.Point(466, 0);
+			this.moneyManagementNextTableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
+			this.moneyManagementNextTableLayoutPanel.Name = "moneyManagementNextTableLayoutPanel";
+			this.moneyManagementNextTableLayoutPanel.RowCount = 2;
+			this.tableLayoutPanel9.SetRowSpan(this.moneyManagementNextTableLayoutPanel, 2);
+			this.moneyManagementNextTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.moneyManagementNextTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+			this.moneyManagementNextTableLayoutPanel.Size = new System.Drawing.Size(40, 208);
+			this.moneyManagementNextTableLayoutPanel.TabIndex = 7;
+			// 
+			// moneyManagementNextButtonToConfig
+			// 
+			this.moneyManagementNextButtonToConfig.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.moneyManagementNextButtonToConfig.Image = ((System.Drawing.Image)(resources.GetObject("moneyManagementNextButtonToConfig.Image")));
+			this.moneyManagementNextButtonToConfig.Location = new System.Drawing.Point(3, 3);
+			this.moneyManagementNextButtonToConfig.Name = "moneyManagementNextButtonToConfig";
+			this.moneyManagementNextButtonToConfig.Size = new System.Drawing.Size(34, 35);
+			this.moneyManagementNextButtonToConfig.TabIndex = 0;
+			this.moneyManagementNextButtonToConfig.UseVisualStyleBackColor = true;
+			this.moneyManagementNextButtonToConfig.Click += new System.EventHandler(this.OnButtonGoToConfigClick);
+			// 
+			// moneyManagementNextButton
+			// 
+			this.moneyManagementNextButton.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.moneyManagementNextButton.Image = ((System.Drawing.Image)(resources.GetObject("moneyManagementNextButton.Image")));
+			this.moneyManagementNextButton.Location = new System.Drawing.Point(3, 44);
+			this.moneyManagementNextButton.Name = "moneyManagementNextButton";
+			this.moneyManagementNextButton.Size = new System.Drawing.Size(34, 161);
+			this.moneyManagementNextButton.TabIndex = 1;
+			this.moneyManagementNextButton.UseVisualStyleBackColor = true;
+			this.moneyManagementNextButton.Click += new System.EventHandler(this.OnFocusedTabPageNextButtonClick);
+			// 
 			// displayTabPage
 			// 
 			this.displayTabPage.Controls.Add(this.tableLayoutPanel12);
@@ -1270,46 +1487,21 @@ namespace PdBets
 			this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-			this.tableLayoutPanel12.Controls.Add(this.displayPrevButton, 0, 0);
-			this.tableLayoutPanel12.Controls.Add(this.displayNextButton, 3, 0);
 			this.tableLayoutPanel12.Controls.Add(this.displayAvailableLabel, 1, 0);
 			this.tableLayoutPanel12.Controls.Add(this.displayLoadedLabel, 2, 0);
 			this.tableLayoutPanel12.Controls.Add(this.displayAvailableListBox, 1, 1);
 			this.tableLayoutPanel12.Controls.Add(this.tableLayoutPanel13, 2, 1);
+			this.tableLayoutPanel12.Controls.Add(this.displayPrevTableLayoutPanel, 0, 0);
+			this.tableLayoutPanel12.Controls.Add(this.displayNextTableLayoutPanel, 3, 0);
 			this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel12.Location = new System.Drawing.Point(0, 0);
 			this.tableLayoutPanel12.Name = "tableLayoutPanel12";
 			this.tableLayoutPanel12.RowCount = 2;
 			this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
 			this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
 			this.tableLayoutPanel12.Size = new System.Drawing.Size(506, 208);
 			this.tableLayoutPanel12.TabIndex = 3;
-			// 
-			// displayPrevButton
-			// 
-			this.displayPrevButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.displayPrevButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.displayPrevButton.Image = ((System.Drawing.Image)(resources.GetObject("displayPrevButton.Image")));
-			this.displayPrevButton.Location = new System.Drawing.Point(3, 3);
-			this.displayPrevButton.Name = "displayPrevButton";
-			this.tableLayoutPanel12.SetRowSpan(this.displayPrevButton, 2);
-			this.displayPrevButton.Size = new System.Drawing.Size(34, 202);
-			this.displayPrevButton.TabIndex = 0;
-			this.displayPrevButton.UseVisualStyleBackColor = true;
-			this.displayPrevButton.Click += new System.EventHandler(this.OnFocusedTabPagePrevButtonClick);
-			// 
-			// displayNextButton
-			// 
-			this.displayNextButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.displayNextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.displayNextButton.Image = ((System.Drawing.Image)(resources.GetObject("displayNextButton.Image")));
-			this.displayNextButton.Location = new System.Drawing.Point(469, 3);
-			this.displayNextButton.Name = "displayNextButton";
-			this.tableLayoutPanel12.SetRowSpan(this.displayNextButton, 2);
-			this.displayNextButton.Size = new System.Drawing.Size(34, 202);
-			this.displayNextButton.TabIndex = 1;
-			this.displayNextButton.UseVisualStyleBackColor = true;
-			this.displayNextButton.Click += new System.EventHandler(this.OnFocusedTabPageNextButtonClick);
 			// 
 			// displayAvailableLabel
 			// 
@@ -1428,6 +1620,84 @@ namespace PdBets
 			this.displayDeleteButton.UseVisualStyleBackColor = true;
 			this.displayDeleteButton.Click += new System.EventHandler(this.OnLoadedDeleteButtonClick);
 			// 
+			// displayPrevTableLayoutPanel
+			// 
+			this.displayPrevTableLayoutPanel.ColumnCount = 1;
+			this.displayPrevTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.displayPrevTableLayoutPanel.Controls.Add(this.displayPrevButtonToPacks, 0, 0);
+			this.displayPrevTableLayoutPanel.Controls.Add(this.displayPrevButton, 0, 1);
+			this.displayPrevTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.displayPrevTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
+			this.displayPrevTableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
+			this.displayPrevTableLayoutPanel.Name = "displayPrevTableLayoutPanel";
+			this.displayPrevTableLayoutPanel.RowCount = 2;
+			this.tableLayoutPanel12.SetRowSpan(this.displayPrevTableLayoutPanel, 2);
+			this.displayPrevTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.displayPrevTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+			this.displayPrevTableLayoutPanel.Size = new System.Drawing.Size(40, 208);
+			this.displayPrevTableLayoutPanel.TabIndex = 6;
+			// 
+			// displayPrevButtonToPacks
+			// 
+			this.displayPrevButtonToPacks.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.displayPrevButtonToPacks.Image = ((System.Drawing.Image)(resources.GetObject("displayPrevButtonToPacks.Image")));
+			this.displayPrevButtonToPacks.Location = new System.Drawing.Point(3, 3);
+			this.displayPrevButtonToPacks.Name = "displayPrevButtonToPacks";
+			this.displayPrevButtonToPacks.Size = new System.Drawing.Size(34, 35);
+			this.displayPrevButtonToPacks.TabIndex = 0;
+			this.displayPrevButtonToPacks.UseVisualStyleBackColor = true;
+			this.displayPrevButtonToPacks.Click += new System.EventHandler(this.OnButtonGoToPacksClick);
+			// 
+			// displayPrevButton
+			// 
+			this.displayPrevButton.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.displayPrevButton.Image = ((System.Drawing.Image)(resources.GetObject("displayPrevButton.Image")));
+			this.displayPrevButton.Location = new System.Drawing.Point(3, 44);
+			this.displayPrevButton.Name = "displayPrevButton";
+			this.displayPrevButton.Size = new System.Drawing.Size(34, 161);
+			this.displayPrevButton.TabIndex = 1;
+			this.displayPrevButton.UseVisualStyleBackColor = true;
+			this.displayPrevButton.Click += new System.EventHandler(this.OnFocusedTabPagePrevButtonClick);
+			// 
+			// displayNextTableLayoutPanel
+			// 
+			this.displayNextTableLayoutPanel.ColumnCount = 1;
+			this.displayNextTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.displayNextTableLayoutPanel.Controls.Add(this.displayNextButtonToConfig, 0, 0);
+			this.displayNextTableLayoutPanel.Controls.Add(this.displayNextButton, 0, 1);
+			this.displayNextTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.displayNextTableLayoutPanel.Location = new System.Drawing.Point(466, 0);
+			this.displayNextTableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
+			this.displayNextTableLayoutPanel.Name = "displayNextTableLayoutPanel";
+			this.displayNextTableLayoutPanel.RowCount = 2;
+			this.tableLayoutPanel12.SetRowSpan(this.displayNextTableLayoutPanel, 2);
+			this.displayNextTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.displayNextTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+			this.displayNextTableLayoutPanel.Size = new System.Drawing.Size(40, 208);
+			this.displayNextTableLayoutPanel.TabIndex = 7;
+			// 
+			// displayNextButtonToConfig
+			// 
+			this.displayNextButtonToConfig.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.displayNextButtonToConfig.Image = ((System.Drawing.Image)(resources.GetObject("displayNextButtonToConfig.Image")));
+			this.displayNextButtonToConfig.Location = new System.Drawing.Point(3, 3);
+			this.displayNextButtonToConfig.Name = "displayNextButtonToConfig";
+			this.displayNextButtonToConfig.Size = new System.Drawing.Size(34, 35);
+			this.displayNextButtonToConfig.TabIndex = 0;
+			this.displayNextButtonToConfig.UseVisualStyleBackColor = true;
+			this.displayNextButtonToConfig.Click += new System.EventHandler(this.OnButtonGoToConfigClick);
+			// 
+			// displayNextButton
+			// 
+			this.displayNextButton.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.displayNextButton.Image = ((System.Drawing.Image)(resources.GetObject("displayNextButton.Image")));
+			this.displayNextButton.Location = new System.Drawing.Point(3, 44);
+			this.displayNextButton.Name = "displayNextButton";
+			this.displayNextButton.Size = new System.Drawing.Size(34, 161);
+			this.displayNextButton.TabIndex = 1;
+			this.displayNextButton.UseVisualStyleBackColor = true;
+			this.displayNextButton.Click += new System.EventHandler(this.OnFocusedTabPageNextButtonClick);
+			// 
 			// outputTabPage
 			// 
 			this.outputTabPage.Controls.Add(this.tableLayoutPanel15);
@@ -1445,12 +1715,12 @@ namespace PdBets
 			this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-			this.tableLayoutPanel15.Controls.Add(this.outputPrevButton, 0, 0);
-			this.tableLayoutPanel15.Controls.Add(this.outputNextButton, 3, 0);
 			this.tableLayoutPanel15.Controls.Add(this.outputAvailableLabel, 1, 0);
 			this.tableLayoutPanel15.Controls.Add(this.outputLoadedLabel, 2, 0);
 			this.tableLayoutPanel15.Controls.Add(this.outputAvailableListBox, 1, 1);
 			this.tableLayoutPanel15.Controls.Add(this.tableLayoutPanel16, 2, 1);
+			this.tableLayoutPanel15.Controls.Add(this.outputPrevTableLayoutPanel, 0, 0);
+			this.tableLayoutPanel15.Controls.Add(this.outputNextTableLayoutPanel, 3, 0);
 			this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel15.Location = new System.Drawing.Point(0, 0);
 			this.tableLayoutPanel15.Name = "tableLayoutPanel15";
@@ -1459,32 +1729,6 @@ namespace PdBets
 			this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.tableLayoutPanel15.Size = new System.Drawing.Size(506, 208);
 			this.tableLayoutPanel15.TabIndex = 3;
-			// 
-			// outputPrevButton
-			// 
-			this.outputPrevButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.outputPrevButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.outputPrevButton.Image = ((System.Drawing.Image)(resources.GetObject("outputPrevButton.Image")));
-			this.outputPrevButton.Location = new System.Drawing.Point(3, 3);
-			this.outputPrevButton.Name = "outputPrevButton";
-			this.tableLayoutPanel15.SetRowSpan(this.outputPrevButton, 2);
-			this.outputPrevButton.Size = new System.Drawing.Size(34, 202);
-			this.outputPrevButton.TabIndex = 0;
-			this.outputPrevButton.UseVisualStyleBackColor = true;
-			this.outputPrevButton.Click += new System.EventHandler(this.OnFocusedTabPagePrevButtonClick);
-			// 
-			// outputNextButton
-			// 
-			this.outputNextButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.outputNextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.outputNextButton.Image = ((System.Drawing.Image)(resources.GetObject("outputNextButton.Image")));
-			this.outputNextButton.Location = new System.Drawing.Point(469, 3);
-			this.outputNextButton.Name = "outputNextButton";
-			this.tableLayoutPanel15.SetRowSpan(this.outputNextButton, 2);
-			this.outputNextButton.Size = new System.Drawing.Size(34, 202);
-			this.outputNextButton.TabIndex = 1;
-			this.outputNextButton.UseVisualStyleBackColor = true;
-			this.outputNextButton.Click += new System.EventHandler(this.OnFocusedTabPageNextButtonClick);
 			// 
 			// outputAvailableLabel
 			// 
@@ -1603,6 +1847,84 @@ namespace PdBets
 			this.outputDeleteButton.UseVisualStyleBackColor = true;
 			this.outputDeleteButton.Click += new System.EventHandler(this.OnLoadedDeleteButtonClick);
 			// 
+			// outputPrevTableLayoutPanel
+			// 
+			this.outputPrevTableLayoutPanel.ColumnCount = 1;
+			this.outputPrevTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.outputPrevTableLayoutPanel.Controls.Add(this.outputPrevButtonToPacks, 0, 0);
+			this.outputPrevTableLayoutPanel.Controls.Add(this.outputPrevButton, 0, 1);
+			this.outputPrevTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.outputPrevTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
+			this.outputPrevTableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
+			this.outputPrevTableLayoutPanel.Name = "outputPrevTableLayoutPanel";
+			this.outputPrevTableLayoutPanel.RowCount = 2;
+			this.tableLayoutPanel15.SetRowSpan(this.outputPrevTableLayoutPanel, 2);
+			this.outputPrevTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.outputPrevTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+			this.outputPrevTableLayoutPanel.Size = new System.Drawing.Size(40, 208);
+			this.outputPrevTableLayoutPanel.TabIndex = 6;
+			// 
+			// outputPrevButtonToPacks
+			// 
+			this.outputPrevButtonToPacks.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.outputPrevButtonToPacks.Image = ((System.Drawing.Image)(resources.GetObject("outputPrevButtonToPacks.Image")));
+			this.outputPrevButtonToPacks.Location = new System.Drawing.Point(3, 3);
+			this.outputPrevButtonToPacks.Name = "outputPrevButtonToPacks";
+			this.outputPrevButtonToPacks.Size = new System.Drawing.Size(34, 35);
+			this.outputPrevButtonToPacks.TabIndex = 0;
+			this.outputPrevButtonToPacks.UseVisualStyleBackColor = true;
+			this.outputPrevButtonToPacks.Click += new System.EventHandler(this.OnButtonGoToPacksClick);
+			// 
+			// outputPrevButton
+			// 
+			this.outputPrevButton.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.outputPrevButton.Image = ((System.Drawing.Image)(resources.GetObject("outputPrevButton.Image")));
+			this.outputPrevButton.Location = new System.Drawing.Point(3, 44);
+			this.outputPrevButton.Name = "outputPrevButton";
+			this.outputPrevButton.Size = new System.Drawing.Size(34, 161);
+			this.outputPrevButton.TabIndex = 1;
+			this.outputPrevButton.UseVisualStyleBackColor = true;
+			this.outputPrevButton.Click += new System.EventHandler(this.OnFocusedTabPagePrevButtonClick);
+			// 
+			// outputNextTableLayoutPanel
+			// 
+			this.outputNextTableLayoutPanel.ColumnCount = 1;
+			this.outputNextTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.outputNextTableLayoutPanel.Controls.Add(this.outputNextButtonToConfig, 0, 0);
+			this.outputNextTableLayoutPanel.Controls.Add(this.outputNextButton, 0, 1);
+			this.outputNextTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.outputNextTableLayoutPanel.Location = new System.Drawing.Point(466, 0);
+			this.outputNextTableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
+			this.outputNextTableLayoutPanel.Name = "outputNextTableLayoutPanel";
+			this.outputNextTableLayoutPanel.RowCount = 2;
+			this.tableLayoutPanel15.SetRowSpan(this.outputNextTableLayoutPanel, 2);
+			this.outputNextTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.outputNextTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+			this.outputNextTableLayoutPanel.Size = new System.Drawing.Size(40, 208);
+			this.outputNextTableLayoutPanel.TabIndex = 7;
+			// 
+			// outputNextButtonToConfig
+			// 
+			this.outputNextButtonToConfig.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.outputNextButtonToConfig.Image = ((System.Drawing.Image)(resources.GetObject("outputNextButtonToConfig.Image")));
+			this.outputNextButtonToConfig.Location = new System.Drawing.Point(3, 3);
+			this.outputNextButtonToConfig.Name = "outputNextButtonToConfig";
+			this.outputNextButtonToConfig.Size = new System.Drawing.Size(34, 35);
+			this.outputNextButtonToConfig.TabIndex = 0;
+			this.outputNextButtonToConfig.UseVisualStyleBackColor = true;
+			this.outputNextButtonToConfig.Click += new System.EventHandler(this.OnButtonGoToConfigClick);
+			// 
+			// outputNextButton
+			// 
+			this.outputNextButton.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.outputNextButton.Image = ((System.Drawing.Image)(resources.GetObject("outputNextButton.Image")));
+			this.outputNextButton.Location = new System.Drawing.Point(3, 44);
+			this.outputNextButton.Name = "outputNextButton";
+			this.outputNextButton.Size = new System.Drawing.Size(34, 161);
+			this.outputNextButton.TabIndex = 1;
+			this.outputNextButton.UseVisualStyleBackColor = true;
+			this.outputNextButton.Click += new System.EventHandler(this.OnFocusedTabPageNextButtonClick);
+			// 
 			// configTabPage
 			// 
 			this.configTabPage.Controls.Add(this.configTableLayoutPanel);
@@ -1621,11 +1943,11 @@ namespace PdBets
 			this.configTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.configTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
 			this.configTableLayoutPanel.Controls.Add(this.tableLayoutPanel18, 1, 1);
-			this.configTableLayoutPanel.Controls.Add(this.configPrevButton, 0, 0);
 			this.configTableLayoutPanel.Controls.Add(this.configLaunchButton, 3, 0);
 			this.configTableLayoutPanel.Controls.Add(this.configModulesLabel, 1, 0);
 			this.configTableLayoutPanel.Controls.Add(this.configSettingsLabel, 2, 0);
 			this.configTableLayoutPanel.Controls.Add(this.configPropertyGrid, 2, 1);
+			this.configTableLayoutPanel.Controls.Add(this.configPrevTableLayoutPanel, 0, 0);
 			this.configTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.configTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
 			this.configTableLayoutPanel.Name = "configTableLayoutPanel";
@@ -1687,39 +2009,26 @@ namespace PdBets
 			this.configModulesTreeView.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.configModulesTreeView.Location = new System.Drawing.Point(3, 3);
 			this.configModulesTreeView.Name = "configModulesTreeView";
-			treeNode1.Name = "inputNode";
-			treeNode1.Text = "Input";
-			treeNode2.Name = "betSelectionNode";
-			treeNode2.Text = "BetSelection";
-			treeNode3.Name = "moneyManagementNode";
-			treeNode3.Text = "MoneyManagement";
-			treeNode4.Name = "displayNode";
-			treeNode4.Text = "Display";
-			treeNode5.Name = "outputNode";
-			treeNode5.Text = "Output";
+			treeNode21.Name = "inputNode";
+			treeNode21.Text = "Input";
+			treeNode22.Name = "betSelectionNode";
+			treeNode22.Text = "BetSelection";
+			treeNode23.Name = "moneyManagementNode";
+			treeNode23.Text = "MoneyManagement";
+			treeNode24.Name = "displayNode";
+			treeNode24.Text = "Display";
+			treeNode25.Name = "outputNode";
+			treeNode25.Text = "Output";
 			this.configModulesTreeView.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-									treeNode1,
-									treeNode2,
-									treeNode3,
-									treeNode4,
-									treeNode5});
+									treeNode21,
+									treeNode22,
+									treeNode23,
+									treeNode24,
+									treeNode25});
 			this.configModulesTreeView.ShowPlusMinus = false;
 			this.configModulesTreeView.Size = new System.Drawing.Size(207, 154);
 			this.configModulesTreeView.TabIndex = 2;
 			this.configModulesTreeView.BeforeCollapse += new System.Windows.Forms.TreeViewCancelEventHandler(this.OnConfigModulesTreeViewBeforeCollapse);
-			// 
-			// configPrevButton
-			// 
-			this.configPrevButton.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.configPrevButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.configPrevButton.Image = ((System.Drawing.Image)(resources.GetObject("configPrevButton.Image")));
-			this.configPrevButton.Location = new System.Drawing.Point(3, 3);
-			this.configPrevButton.Name = "configPrevButton";
-			this.configTableLayoutPanel.SetRowSpan(this.configPrevButton, 2);
-			this.configPrevButton.Size = new System.Drawing.Size(34, 202);
-			this.configPrevButton.TabIndex = 0;
-			this.configPrevButton.UseVisualStyleBackColor = true;
-			this.configPrevButton.Click += new System.EventHandler(this.OnFocusedTabPagePrevButtonClick);
 			// 
 			// configLaunchButton
 			// 
@@ -1733,7 +2042,7 @@ namespace PdBets
 			this.configLaunchButton.Size = new System.Drawing.Size(34, 202);
 			this.configLaunchButton.TabIndex = 1;
 			this.configLaunchButton.UseVisualStyleBackColor = true;
-			this.configLaunchButton.Click += new System.EventHandler(this.OnConfigLaunchButtonClick);
+			this.configLaunchButton.Click += new System.EventHandler(this.OnLaunchButtonClick);
 			// 
 			// configModulesLabel
 			// 
@@ -1763,6 +2072,45 @@ namespace PdBets
 			this.configPropertyGrid.Name = "configPropertyGrid";
 			this.configPropertyGrid.Size = new System.Drawing.Size(207, 179);
 			this.configPropertyGrid.TabIndex = 7;
+			// 
+			// configPrevTableLayoutPanel
+			// 
+			this.configPrevTableLayoutPanel.ColumnCount = 1;
+			this.configPrevTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.configPrevTableLayoutPanel.Controls.Add(this.configPrevButtonToPacks, 0, 0);
+			this.configPrevTableLayoutPanel.Controls.Add(this.configPrevButton, 0, 1);
+			this.configPrevTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.configPrevTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
+			this.configPrevTableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
+			this.configPrevTableLayoutPanel.Name = "configPrevTableLayoutPanel";
+			this.configPrevTableLayoutPanel.RowCount = 2;
+			this.configTableLayoutPanel.SetRowSpan(this.configPrevTableLayoutPanel, 2);
+			this.configPrevTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.configPrevTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+			this.configPrevTableLayoutPanel.Size = new System.Drawing.Size(40, 208);
+			this.configPrevTableLayoutPanel.TabIndex = 8;
+			// 
+			// configPrevButtonToPacks
+			// 
+			this.configPrevButtonToPacks.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.configPrevButtonToPacks.Image = ((System.Drawing.Image)(resources.GetObject("configPrevButtonToPacks.Image")));
+			this.configPrevButtonToPacks.Location = new System.Drawing.Point(3, 3);
+			this.configPrevButtonToPacks.Name = "configPrevButtonToPacks";
+			this.configPrevButtonToPacks.Size = new System.Drawing.Size(34, 35);
+			this.configPrevButtonToPacks.TabIndex = 0;
+			this.configPrevButtonToPacks.UseVisualStyleBackColor = true;
+			this.configPrevButtonToPacks.Click += new System.EventHandler(this.OnButtonGoToPacksClick);
+			// 
+			// configPrevButton
+			// 
+			this.configPrevButton.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.configPrevButton.Image = ((System.Drawing.Image)(resources.GetObject("configPrevButton.Image")));
+			this.configPrevButton.Location = new System.Drawing.Point(3, 44);
+			this.configPrevButton.Name = "configPrevButton";
+			this.configPrevButton.Size = new System.Drawing.Size(34, 161);
+			this.configPrevButton.TabIndex = 1;
+			this.configPrevButton.UseVisualStyleBackColor = true;
+			this.configPrevButton.Click += new System.EventHandler(this.OnFocusedTabPagePrevButtonClick);
 			// 
 			// tableLayoutPanel4
 			// 
@@ -1849,35 +2197,80 @@ namespace PdBets
 			this.modulesTabControl.ResumeLayout(false);
 			this.packsTabPage.ResumeLayout(false);
 			this.packsTableLayoutPanel.ResumeLayout(false);
+			this.packsNextTableLayoutPanel.ResumeLayout(false);
 			this.inputTabPage.ResumeLayout(false);
 			this.tableLayoutPanel1.ResumeLayout(false);
 			this.tableLayoutPanel2.ResumeLayout(false);
 			this.tableLayoutPanel3.ResumeLayout(false);
+			this.inputNextTableLayoutPanel.ResumeLayout(false);
+			this.inputPrevTableLayoutPanel.ResumeLayout(false);
 			this.betSelectionTabPage.ResumeLayout(false);
 			this.tableLayoutPanel5.ResumeLayout(false);
 			this.tableLayoutPanel7.ResumeLayout(false);
 			this.tableLayoutPanel8.ResumeLayout(false);
+			this.betSelectionPrevTableLayoutPanel.ResumeLayout(false);
+			this.betSelectionNextTableLayoutPanel.ResumeLayout(false);
 			this.moneyManagementTabPage.ResumeLayout(false);
 			this.tableLayoutPanel9.ResumeLayout(false);
 			this.tableLayoutPanel10.ResumeLayout(false);
 			this.tableLayoutPanel11.ResumeLayout(false);
+			this.moneyManagementPrevTableLayoutPanel.ResumeLayout(false);
+			this.moneyManagementNextTableLayoutPanel.ResumeLayout(false);
 			this.displayTabPage.ResumeLayout(false);
 			this.tableLayoutPanel12.ResumeLayout(false);
 			this.tableLayoutPanel13.ResumeLayout(false);
 			this.tableLayoutPanel14.ResumeLayout(false);
+			this.displayPrevTableLayoutPanel.ResumeLayout(false);
+			this.displayNextTableLayoutPanel.ResumeLayout(false);
 			this.outputTabPage.ResumeLayout(false);
 			this.tableLayoutPanel15.ResumeLayout(false);
 			this.tableLayoutPanel16.ResumeLayout(false);
 			this.tableLayoutPanel17.ResumeLayout(false);
+			this.outputPrevTableLayoutPanel.ResumeLayout(false);
+			this.outputNextTableLayoutPanel.ResumeLayout(false);
 			this.configTabPage.ResumeLayout(false);
 			this.configTableLayoutPanel.ResumeLayout(false);
 			this.tableLayoutPanel18.ResumeLayout(false);
 			this.tableLayoutPanel19.ResumeLayout(false);
+			this.configPrevTableLayoutPanel.ResumeLayout(false);
 			this.tableLayoutPanel4.ResumeLayout(false);
 			this.tableLayoutPanel6.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button outputNextButton;
+		private System.Windows.Forms.Button outputNextButtonToConfig;
+		private System.Windows.Forms.TableLayoutPanel outputNextTableLayoutPanel;
+		private System.Windows.Forms.Button packsLaunchButton;
+		private System.Windows.Forms.Button inputPrevButton;
+		private System.Windows.Forms.Button inputPrevButtonToConfig;
+		private System.Windows.Forms.TableLayoutPanel inputPrevTableLayoutPanel;
+		private System.Windows.Forms.Button configPrevButton;
+		private System.Windows.Forms.Button configPrevButtonToPacks;
+		private System.Windows.Forms.TableLayoutPanel configPrevTableLayoutPanel;
+		private System.Windows.Forms.Button outputPrevButton;
+		private System.Windows.Forms.Button outputPrevButtonToPacks;
+		private System.Windows.Forms.TableLayoutPanel outputPrevTableLayoutPanel;
+		private System.Windows.Forms.Button displayNextButton;
+		private System.Windows.Forms.Button displayNextButtonToConfig;
+		private System.Windows.Forms.TableLayoutPanel displayNextTableLayoutPanel;
+		private System.Windows.Forms.Button displayPrevButton;
+		private System.Windows.Forms.Button displayPrevButtonToPacks;
+		private System.Windows.Forms.TableLayoutPanel displayPrevTableLayoutPanel;
+		private System.Windows.Forms.Button moneyManagementNextButton;
+		private System.Windows.Forms.Button moneyManagementNextButtonToConfig;
+		private System.Windows.Forms.TableLayoutPanel moneyManagementNextTableLayoutPanel;
+		private System.Windows.Forms.Button moneyManagementPrevButtonToPacks;
+		private System.Windows.Forms.TableLayoutPanel moneyManagementPrevTableLayoutPanel;
+		private System.Windows.Forms.Button betSelectionNextButtonToConfig;
+		private System.Windows.Forms.TableLayoutPanel betSelectionNextTableLayoutPanel;
+		private System.Windows.Forms.Button betSelectionPrevButtonToPacks;
+		private System.Windows.Forms.TableLayoutPanel betSelectionPrevTableLayoutPanel;
+		private System.Windows.Forms.Button inputNextButton;
+		private System.Windows.Forms.Button inputNextButtonToConfig;
+		private System.Windows.Forms.TableLayoutPanel inputNextTableLayoutPanel;
+		private System.Windows.Forms.Button packsNextButtonToConfig;
+		private System.Windows.Forms.TableLayoutPanel packsNextTableLayoutPanel;
 		private System.Windows.Forms.ToolStripMenuItem convertersToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem generatorsToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem generalToolStripMenuItem;
@@ -1921,8 +2314,6 @@ namespace PdBets
 		private System.Windows.Forms.ListBox outputAvailableListBox;
 		private System.Windows.Forms.Label outputLoadedLabel;
 		private System.Windows.Forms.Label outputAvailableLabel;
-		private System.Windows.Forms.Button outputNextButton;
-		private System.Windows.Forms.Button outputPrevButton;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
 		private System.Windows.Forms.Button displayDeleteButton;
 		private System.Windows.Forms.Button displayDownButton;
@@ -1933,8 +2324,6 @@ namespace PdBets
 		private System.Windows.Forms.ListBox displayAvailableListBox;
 		private System.Windows.Forms.Label displayLoadedLabel;
 		private System.Windows.Forms.Label displayAvailableLabel;
-		private System.Windows.Forms.Button displayNextButton;
-		private System.Windows.Forms.Button displayPrevButton;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
 		private System.Windows.Forms.Button moneyManagementDeleteButton;
 		private System.Windows.Forms.Button moneyManagementDownButton;
@@ -1945,7 +2334,6 @@ namespace PdBets
 		private System.Windows.Forms.ListBox moneyManagementAvailableListBox;
 		private System.Windows.Forms.Label moneyManagementLoadedLabel;
 		private System.Windows.Forms.Label moneyManagementAvailableLabel;
-		private System.Windows.Forms.Button moneyManagementNextButton;
 		private System.Windows.Forms.Button moneyManagementPrevButton;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
 		private System.Windows.Forms.Button betSelectionDeleteButton;
@@ -1969,8 +2357,6 @@ namespace PdBets
 		private System.Windows.Forms.ListBox inputAvailableListBox;
 		private System.Windows.Forms.Label inputLoadedLabel;
 		private System.Windows.Forms.Label modulesAvailableLabel;
-		private System.Windows.Forms.Button inputNextButton;
-		private System.Windows.Forms.Button inputPrevButton;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
 		private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem1;
 		private System.Windows.Forms.TreeView packsModulesTreeView;
@@ -1978,7 +2364,6 @@ namespace PdBets
 		private System.Windows.Forms.Label packsModulesLabel;
 		private System.Windows.Forms.Label packsAvailableLabel;
 		private System.Windows.Forms.Button configLaunchButton;
-		private System.Windows.Forms.Button configPrevButton;
 		private System.Windows.Forms.TableLayoutPanel configTableLayoutPanel;
 		private System.Windows.Forms.Button packsNextButton;
 		private System.Windows.Forms.Button button4;
@@ -1986,7 +2371,6 @@ namespace PdBets
 		private System.Windows.Forms.ListBox listBox2;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-		private System.Windows.Forms.Button packsLoadButton;
 		private System.Windows.Forms.TabPage inputTabPage;
 		private System.Windows.Forms.TableLayoutPanel packsTableLayoutPanel;
 		private System.Windows.Forms.TabPage outputTabPage;

@@ -607,22 +607,33 @@ namespace PdBets
         }
 
         /// <summary>
-        /// Raises the packs load button click event.
+        /// Raises the button go to config click event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
         /// <param name="e">Event arguments.</param>
-        private void OnPacksLoadButtonClick(object sender, EventArgs e)
+        private void OnButtonGoToConfigClick(object sender, EventArgs e)
         {
-            // Move to last tab (config)
-            this.modulesTabControl.SelectedIndex = this.modulesTabControl.TabCount - 1;
+            // Move to config
+            this.modulesTabControl.SelectedTab = this.configTabPage;
         }
 
         /// <summary>
-        /// Raises the config launch button click event.
+        /// Raises the button go to packs click event.
         /// </summary>
         /// <param name="sender">Sender object.</param>
         /// <param name="e">Event arguments.</param>
-        private void OnConfigLaunchButtonClick(object sender, EventArgs e)
+        private void OnButtonGoToPacksClick(object sender, EventArgs e)
+		{
+			// Move to packs
+            this.modulesTabControl.SelectedTab = this.packsTabPage;
+		}
+
+        /// <summary>
+        /// Raises the launch button click event.
+        /// </summary>
+        /// <param name="sender">Sender object.</param>
+        /// <param name="e">Event arguments.</param>
+        private void OnLaunchButtonClick(object sender, EventArgs e)
         {
             /* Load modules */
 
