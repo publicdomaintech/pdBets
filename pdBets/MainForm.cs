@@ -423,6 +423,19 @@ namespace PdBets
                     }
                 }
             }
+
+            /* Signal input modules to loop */
+
+            // Check there are loaded input modules for current module type
+            if (this.loadedModulesDictionary["Input"].Count > 0)
+            {
+                // Iterate input modules
+                for (int j = 0; j < this.loadedModulesDictionary["Input"].Count; j++)
+                {
+                    // Send loop message
+                    this.loadedModulesDictionary["Input"][j].Input("-L", string.Empty);
+                }
+            }
         }
 
         /// <summary>
